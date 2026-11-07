@@ -1,0 +1,627 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>أكاديمية AI للبرمجة — تعلم من A إلى Z بنظام الأحزمة</title>
+<meta name="description" content="تعلم الذكاء الاصطناعي والبرمجة بنظام المسارات والأحزمة بحال الكاراطيه: سجل مجانا، حل التحديات، وخذ الأدوات.">
+<meta name="keywords" content="تعلم البرمجة, الذكاء الاصطناعي, تعلم AI, أدوات الذكاء الاصطناعي, ChatGPT, Claude, برمجة للمبتدئين, تحديات برمجة">
+<meta property="og:title" content="أكاديمية AI للبرمجة — تعلم من A إلى Z بنظام الأحزمة">
+<meta property="og:description" content="سجل مجانا، اتبع المسارات، حل التحديات، وارفع الحزام ديالك من الأبيض حتى الأسود 🥋">
+<meta property="og:type" content="website">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800;900&family=Tajawal:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg:#0a0c12; --bg2:#10131d; --card:rgba(255,255,255,0.04);
+    --line:rgba(255,255,255,0.09);
+    --teal:#00d4aa; --purple:#8b5cf6; --gold:#fbbf24; --blue:#38bdf8; --red:#ef4444;
+    --txt:#e8edf7; --dim:#9aa7c0;
+  }
+  *{margin:0;padding:0;box-sizing:border-box}
+  body{background:var(--bg);color:var(--txt);font-family:'Cairo','Tajawal',sans-serif;overflow-x:hidden}
+  .wrap{max-width:1150px;margin:auto;padding:0 22px}
+  a{color:inherit;text-decoration:none}
+  nav{position:sticky;top:0;z-index:50;background:rgba(10,12,18,0.88);backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
+  .navin{display:flex;align-items:center;justify-content:space-between;height:66px}
+  .logo{display:flex;align-items:center;gap:10px;font-weight:900;font-size:1.05rem}
+  .logo .lg{width:38px;height:38px;border-radius:11px;background:linear-gradient(135deg,var(--red),var(--purple));display:grid;place-items:center;font-size:1.15rem}
+  .navlinks{display:flex;gap:24px;font-size:.92rem;color:var(--dim);font-weight:600}
+  .navlinks a:hover{color:var(--teal)}
+  .btn{display:inline-flex;align-items:center;gap:8px;padding:11px 22px;border-radius:12px;font-weight:800;font-size:.95rem;transition:.25s;cursor:pointer;border:none}
+  .btn-grad{background:linear-gradient(135deg,var(--red),var(--purple));color:#fff;box-shadow:0 8px 26px rgba(239,68,68,.25)}
+  .btn-grad:hover{transform:translateY(-2px);box-shadow:0 12px 32px rgba(239,68,68,.4)}
+  .btn-teal{background:linear-gradient(135deg,var(--teal),var(--blue));color:#04121c;box-shadow:0 8px 26px rgba(0,212,170,.28)}
+  .btn-teal:hover{transform:translateY(-2px)}
+  .btn-ghost{border:1.5px solid var(--line);color:var(--txt)}
+  .btn-ghost:hover{border-color:var(--teal);color:var(--teal)}
+  .btn-wa{background:#16a34a;color:#fff;box-shadow:0 6px 18px rgba(22,163,74,.3);font-size:.85rem;padding:9px 16px}
+  .btn-wa:hover{background:#15803d}
+  .hero{position:relative;padding:80px 0 50px;text-align:center}
+  .glow{position:absolute;border-radius:50%;filter:blur(120px);opacity:.3;pointer-events:none}
+  .g1{width:420px;height:420px;background:var(--red);top:-120px;right:8%}
+  .g2{width:380px;height:380px;background:var(--purple);bottom:-160px;left:6%}
+  .badge{display:inline-flex;align-items:center;gap:8px;border:1px solid var(--line);background:var(--card);padding:8px 18px;border-radius:99px;font-size:.85rem;color:var(--dim);margin-bottom:26px}
+  .badge b{color:var(--teal)}
+  h1{font-size:clamp(1.7rem,4.6vw,3rem);font-weight:900;line-height:1.35}
+  h1 .grad{background:linear-gradient(120deg,var(--red),var(--purple),var(--teal));-webkit-background-clip:text;background-clip:text;color:transparent}
+  .sub{color:var(--dim);font-size:1.05rem;max-width:660px;margin:18px auto 30px;line-height:1.9}
+  .hero-btns{display:flex;gap:14px;justify-content:center;flex-wrap:wrap}
+  .belts{display:flex;justify-content:center;align-items:center;gap:6px;flex-wrap:wrap;margin-top:36px}
+  .belt{display:flex;flex-direction:column;align-items:center;gap:6px}
+  .belt .bar{width:52px;height:14px;border-radius:4px;border:1px solid rgba(255,255,255,.25)}
+  .belt .nm{font-size:.68rem;color:var(--dim);font-weight:700}
+  .barr{font-size:1.1rem;color:#334155}
+  section{padding:85px 0}
+  .sec-head{text-align:center;margin-bottom:52px}
+  .kicker{display:inline-block;color:var(--red);font-weight:800;font-size:.85rem;letter-spacing:1px;margin-bottom:10px}
+  h2{font-size:clamp(1.5rem,3.4vw,2.2rem);font-weight:900}
+  .sec-sub{color:var(--dim);margin-top:12px;font-size:1rem}
+  .dojos{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+  .dojo{position:relative;background:var(--card);border:1px solid var(--line);border-radius:18px;padding:26px 22px;transition:.3s}
+  .dojo:hover{transform:translateY(-4px);border-color:rgba(239,68,68,.45)}
+  .dojo .dnum{position:absolute;top:-16px;inset-inline-start:20px;padding:6px 14px;border-radius:99px;font-weight:900;font-size:.85rem;background:#141824;border:1px solid var(--line)}
+  .dojo h3{margin-top:8px;font-size:1.1rem;font-weight:800;display:flex;align-items:center;gap:10px}
+  .dojo p{color:var(--dim);font-size:.88rem;line-height:1.8;margin-top:8px}
+  .dojo .meta{display:flex;gap:14px;margin-top:14px;font-size:.75rem;color:var(--dim);font-weight:700}
+  .dojo .meta b{color:var(--teal)}
+  .pbwrap{height:6px;border-radius:99px;background:rgba(255,255,255,.07);margin-top:14px;overflow:hidden}
+  .pbar{height:100%;border-radius:99px;width:0%}
+  .dojo .dwa{margin-top:14px}
+  .tools{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
+  .tool{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:22px;text-align:center;transition:.3s}
+  .tool:hover{transform:translateY(-4px);border-color:rgba(56,189,248,.45)}
+  .ticon{width:56px;height:56px;margin:0 auto 14px;border-radius:16px;display:grid;place-items:center}
+  .tool h3{font-size:1rem;font-weight:800}
+  .tool p{color:var(--dim);font-size:.82rem;line-height:1.7;margin-top:6px}
+  .tool .cat{display:inline-block;margin-top:10px;font-size:.72rem;font-weight:700;padding:3px 12px;border-radius:99px}
+  .tool .acts{margin-top:14px;display:flex;gap:8px;justify-content:center;flex-wrap:wrap}
+  .tool .acts a{padding:8px 14px;border-radius:10px;font-size:.8rem;font-weight:800;border:1px solid var(--line)}
+  .tget{color:var(--teal);border-color:rgba(0,212,170,.3)!important}
+  .lessons{display:grid;grid-template-columns:repeat(2,1fr);gap:18px}
+  .lesson{display:flex;gap:16px;align-items:flex-start;background:var(--card);border:1px solid var(--line);border-radius:16px;padding:20px;transition:.3s}
+  .lesson:hover{border-color:rgba(244,114,182,.4)}
+  .lnum{flex:none;width:46px;height:46px;border-radius:13px;display:grid;place-items:center;font-weight:900;font-size:1rem;background:rgba(0,212,170,.1);border:1px solid rgba(0,212,170,.3);color:var(--teal)}
+  .lesson h3{font-size:1rem;font-weight:800}
+  .lesson p{color:var(--dim);font-size:.88rem;margin-top:5px;line-height:1.8}
+  .lvl{font-size:.72rem;font-weight:700;color:var(--gold)}
+  .regbox{max-width:640px;margin:0 auto;background:linear-gradient(160deg,rgba(239,68,68,.08),rgba(139,92,246,.08));border:1px solid rgba(239,68,68,.3);border-radius:22px;padding:40px 30px;text-align:center}
+  .regbox h2{font-size:1.5rem}
+  .regbox .rsp{color:var(--dim);margin-top:10px;line-height:1.9}
+  .rform{display:grid;gap:12px;margin-top:24px;text-align:right}
+  .rform input{background:#0d1019;border:1px solid var(--line);border-radius:12px;padding:13px 16px;color:var(--txt);font-family:inherit;font-size:.95rem;outline:none}
+  .rform input:focus{border-color:var(--teal)}
+  .rform .lbl{font-size:.85rem;color:var(--dim);font-weight:700;margin-bottom:-6px}
+  .cta{background:linear-gradient(140deg,rgba(0,212,170,.12),rgba(139,92,246,.12));border:1px solid rgba(0,212,170,.25);border-radius:24px;padding:56px 30px;text-align:center}
+  .cta h2{font-size:clamp(1.4rem,3vw,2rem)}
+  .cta p{color:var(--dim);margin:14px auto 28px;max-width:560px;line-height:1.9}
+  footer{border-top:1px solid var(--line);padding:34px 0;text-align:center;color:var(--dim);font-size:.85rem}
+  footer b{color:var(--teal)}
+  .arrow{display:inline-block;animation:bounce 1.6s infinite}
+  @keyframes bounce{0%,100%{transform:translateY(0)}50%{transform:translateY(-4px)}}
+  .fadeup{opacity:0;transform:translateY(24px);transition:.7s}
+  .fadeup.show{opacity:1;transform:none}
+  .plinks{display:flex;flex-wrap:wrap;gap:10px;justify-content:center}
+  .plinks a{padding:10px 18px;border-radius:12px;border:1px solid var(--line);font-weight:700;font-size:.9rem}
+  @media(max-width:860px){
+    .navlinks{display:none}
+    .dojos{grid-template-columns:1fr 1fr}
+    .tools{grid-template-columns:1fr 1fr}
+  }
+  @media(max-width:560px){
+    .dojos{grid-template-columns:1fr}
+    .tools{grid-template-columns:1fr}
+    .lessons{grid-template-columns:1fr}
+  }
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="wrap navin">
+    <div class="logo"><span class="lg">🥷</span> أكاديمية <span style="color:var(--teal)">AI</span> للبرمجة</div>
+    <div class="navlinks">
+      <a href="#dojos">المسارات 🥋</a>
+      <a href="#tools">الأدوات</a>
+      <a href="#lesson">درس اليوم 📖</a> <a href="#daily">أداة اليوم 🌟</a> <a href="#messages">راسلنا 📩</a>
+      <a href="#resources">الموارد 📦</a> <a href="#library">المكتبة 🗂️</a> <a href="#nosignups">أدوات مفتوحة 🧰</a> <a href="#security-tools">فحص الأمان 🔐</a>
+      <a href="#register">سجل مجانا</a>
+    </div>
+    <a href="#register" class="btn btn-grad" style="padding:9px 18px">سجل دابا 🥋</a>
+  </div>
+ </nav>
+
+<header class="hero">
+  <div class="glow g1"></div><div class="glow g2"></div>
+  <div class="wrap">
+    <div class="badge">🥷 نظام الأحزمة — تعلم، حل التحديات، وارفع الحزام ديالك</div>
+    <h1>تعلم <span class="grad">البرمجة والذكاء الاصطناعي</span><br>بحال الكاراطيه: من الحزام الأبيض حتى الأسود</h1>
+    <p class="sub">6 مسارات مرتبة، تحديات فكل مستوى، وأدوات حقيقية كتحصل عليها — كلشي مجاني 100%. سجل وابدا اليوم.</p>
+    <div class="hero-btns">
+      <a href="#dojos" class="btn btn-grad">شوف المسارات <span class="arrow">↓</span></a>
+      <a href="#register" class="btn btn-teal">سجل مجانا 🥋</a>
+    </div>
+    <div class="belts">
+      <div class="belt"><div class="bar" style="background:#f3f4f6"></div><div class="nm">أبيض</div></div>
+      <span class="barr">→</span>
+      <div class="belt"><div class="bar" style="background:#f59e0b"></div><div class="nm">أصفر</div></div>
+      <span class="barr">→</span>
+      <div class="belt"><div class="bar" style="background:#10b981"></div><div class="nm">أخضر</div></div>
+      <span class="barr">→</span>
+      <div class="belt"><div class="bar" style="background:#3b82f6"></div><div class="nm">أزرق</div></div>
+      <span class="barr">→</span>
+      <div class="belt"><div class="bar" style="background:#8b5cf6"></div><div class="nm">بنفسجي</div></div>
+      <span class="barr">→</span>
+      <div class="belt"><div class="bar" style="background:#0a0c12"></div><div class="nm">أسود 🥋</div></div>
+    </div>
+  </div>
+</header>
+
+<section id="dojos">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="kicker">المسارات — Dojos</span>
+      <h2>6 مسارات من الصفر حتى الاحتراف 🥋</h2>
+      <p class="sec-sub">كل مسار فيه دروس وتحديات — كتكملهم وحدك ولا معانا، وكترفع الحزام ديالك</p>
+    </div>
+    <div class="dojos">
+      <div class="dojo fadeup"><span class="dnum" style="color:#f3f4f6">الحزام الأبيض</span>
+        <h3>🎒 الأساسيات</h3>
+        <p>شنو هي البرمجة، كيفاش كيخدم الحاسوب والأنترنت، وكيفاش تفكر بحال مبرمج — بلا رياضيات.</p>
+        <div class="meta"><span><b>4</b> دروس</span><span><b>6</b> تحديات</span></div>
+        <div class="pbwrap"><div class="pbar" style="background:#f3f4f6;width:15%"></div></div>
+        <div class="dwa"><a class="btn btn-wa" href="https://wa.me/212663803875?text=%D8%A8%D8%BA%D9%8A%D8%AA%20%D9%86%D8%A8%D8%AF%D8%A7%20%D9%85%D8%B3%D8%A7%D8%B1%20%20%D8%A7%D9%84%D8%A3%D8%B3%D8%A7%D8%B3%D9%8A%D8%A7%D8%AA%20%F0%9F%8E%92%20%D9%81%D8%A3%D9%83%D8%A7%D8%AF%D9%85%D9%8A%D8%A9%20AI">ابدا معايا 💬</a></div>
+      </div>
+      <div class="dojo fadeup"><span class="dnum" style="color:#f59e0b">الحزام الأصفر</span>
+        <h3>🏗️ HTML و CSS</h3>
+        <p>كتبني أول صفحة ويب فحياتك وتفهم كيفاش كل موقع مبني — الهيكل والجمال ديال الويب.</p>
+        <div class="meta"><span><b>5</b> دروس</span><span><b>8</b> تحديات</span></div>
+        <div class="pbwrap"><div class="pbar" style="background:#f59e0b;width:15%"></div></div>
+        <div class="dwa"><a class="btn btn-wa" href="https://wa.me/212663803875?text=%D8%A8%D8%BA%D9%8A%D8%AA%20%D9%86%D8%A8%D8%AF%D8%A7%20%D9%85%D8%B3%D8%A7%D8%B1%20HTML%20%D9%88%20CSS%20%F0%9F%8F%97%EF%B8%8F%20%D9%81%D8%A3%D9%83%D8%A7%D8%AF%D9%85%D9%8A%D8%A9%20AI">ابدا معايا 💬</a></div>
+      </div>
+      <div class="dojo fadeup"><span class="dnum" style="color:#10b981">الحزام الأخضر</span>
+        <h3>⚡ JavaScript</h3>
+        <p>الروح ديال الموقع: الحركة والتفاعل. أشهر لغة فالعالم ومنها كتبني تطبيقات كاملة.</p>
+        <div class="meta"><span><b>6</b> دروس</span><span><b>10</b> تحديات</span></div>
+        <div class="pbwrap"><div class="pbar" style="background:#10b981;width:15%"></div></div>
+        <div class="dwa"><a class="btn btn-wa" href="https://wa.me/212663803875?text=%D8%A8%D8%BA%D9%8A%D8%AA%20%D9%86%D8%A8%D8%AF%D8%A7%20%D9%85%D8%B3%D8%A7%D8%B1%20JavaScript%20%E2%9A%A1%20%D9%81%D8%A3%D9%83%D8%A7%D8%AF%D9%85%D9%8A%D8%A9%20AI">ابدا معايا 💬</a></div>
+      </div>
+      <div class="dojo fadeup"><span class="dnum" style="color:#3b82f6">الحزام الأزرق</span>
+        <h3>🐍 Python</h3>
+        <p>أبسط وأقوى لغة للذكاء الاصطناعي: برامج، بوتات، تحليل داتا — وفهم AI من الداخل.</p>
+        <div class="meta"><span><b>7</b> دروس</span><span><b>12</b> تحديات</span></div>
+        <div class="pbwrap"><div class="pbar" style="background:#3b82f6;width:15%"></div></div>
+        <div class="dwa"><a class="btn btn-wa" href="https://wa.me/212663803875?text=%D8%A8%D8%BA%D9%8A%D8%AA%20%D9%86%D8%A8%D8%AF%D8%A7%20%D9%85%D8%B3%D8%A7%D8%B1%20Python%20%F0%9F%90%8D%20%D9%81%D8%A3%D9%83%D8%A7%D8%AF%D9%85%D9%8A%D8%A9%20AI">ابدا معايا 💬</a></div>
+      </div>
+      <div class="dojo fadeup"><span class="dnum" style="color:#8b5cf6">الحزام البنفسجي</span>
+        <h3>🤖 أدوات الذكاء الاصطناعي</h3>
+        <p>هنا كيبان الفرق: ChatGPT، Claude، Cursor — كيفاش تكود 10x أسرع من المبرمج العادي.</p>
+        <div class="meta"><span><b>8</b> دروس</span><span><b>15</b> تحديات</span></div>
+        <div class="pbwrap"><div class="pbar" style="background:#8b5cf6;width:15%"></div></div>
+        <div class="dwa"><a class="btn btn-wa" href="https://wa.me/212663803875?text=%D8%A8%D8%BA%D9%8A%D8%AA%20%D9%86%D8%A8%D8%AF%D8%A7%20%D9%85%D8%B3%D8%A7%D8%B1%20%D8%A3%D8%AF%D9%88%D8%A7%D8%AA%20%D8%A7%D9%84%D8%B0%D9%83%D8%A7%D8%A1%20%D8%A7%D9%84%D8%A7%D8%B5%D8%B7%D9%86%D8%A7%D8%B9%D9%8A%20%F0%9F%A4%96%20%D9%81%D8%A3%D9%83%D8%A7%D8%AF%D9%85%D9%8A%D8%A9%20AI">ابدا معايا 💬</a></div>
+      </div>
+      <div class="dojo fadeup"><span class="dnum" style="color:#fbbf24">الحزام الأسود 🥋</span>
+        <h3>🚀 مشروع حقيقي</h3>
+        <p>المشروع النهائي: موقع كامل من الفكرة حتى النشر أونلاين — تهضر عليه ف CV ولا كتبيعو.</p>
+        <div class="meta"><span><b>4</b> دروس</span><span><b>3</b> تحديات</span></div>
+        <div class="pbwrap"><div class="pbar" style="background:#fbbf24;width:15%"></div></div>
+        <div class="dwa"><a class="btn btn-wa" href="https://wa.me/212663803875?text=%D8%A8%D8%BA%D9%8A%D8%AA%20%D9%86%D8%A8%D8%AF%D8%A7%20%D9%85%D8%B3%D8%A7%D8%B1%20%D8%A7%D9%84%D9%85%D8%B4%D8%B1%D9%88%D8%B9%20%D8%A7%D9%84%D8%AD%D9%82%D9%8A%D9%82%D9%8A%20%F0%9F%9A%80%20%D9%81%D8%A3%D9%83%D8%A7%D8%AF%D9%85%D9%8A%D8%A9%20AI">ابدا معايا 💬</a></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="tools" style="background:var(--bg2)">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="kicker">صندوق الأدوات</span>
+      <h2>أدوات الذكاء الاصطناعي 🧰 — اطلب أي وحدة</h2>
+      <p class="sec-sub">كليكي على "الموقع" باش تديها ديريكت، ولا "اطلبها" واصيفطو ليا على واتساب ونوصلوها ليك</p>
+    </div>
+    <div class="tools">
+      <div class="tool fadeup">
+        <div class="ticon" style="background:rgba(16,185,129,.12);border:1px solid rgba(16,185,129,.3);font-size:1.6rem">🤖</div>
+        <h3>ChatGPT</h3>
+        <p>مساعدك الشخصي: يشرح ليك الكود، يصاوب ليك، ويجاوب على أي سؤال</p>
+        <span class="cat" style="background:rgba(16,185,129,.12);color:#34d399">مساعد عام</span>
+        <div class="acts"><a class="tget" href="https://chatgpt.com">الموقع ↗</a><a class="btn-wa" href="https://wa.me/212663803875?text=%D8%A8%D8%BA%D9%8A%D8%AA%20%D8%A3%D8%AF%D8%A7%D8%A9%20ChatGPT%20%F0%9F%A4%96">اطلبها 💬</a></div>
+      </div>
+      <div class="tool fadeup">
+        <div class="ticon" style="background:rgba(217,119,6,.12);border:1px solid rgba(217,119,6,.3);font-size:1.6rem">⭐</div>
+        <h3>Claude</h3>
+        <p>الأقوى فكتابة الكود والمشاريع الكبيرة — أداة المحترفين</p>
+        <span class="cat" style="background:rgba(217,119,6,.12);color:#fbbf24">كود متقدم</span>
+        <div class="acts"><a class="tget" href="https://claude.ai">الموقع ↗</a><a class="btn-wa" href="https://wa.me/212663803875?text=%D8%A8%D8%BA%D9%8A%D8%AA%20%D8%A3%D8%AF%D8%A7%D8%A9%20Claude%20%E2%AD%90">اطلبها 💬</a></div>
+      </div>
+      <div class="tool fadeup">
+        <div class="ticon" style="background:rgba(56,189,248,.12);border:1px solid rgba(56,189,248,.3);font-size:1.6rem">💎</div>
+        <h3>Gemini</h3>
+        <p>ذكاء غوغل: دردشة، صور، وتحليل — مجاني ببريد Gmail</p>
+        <span class="cat" style="background:rgba(56,189,248,.12);color:#7dd3fc">ديال غوغل</span>
+        <div class="acts"><a class="tget" href="https://gemini.google.com">الموقع ↗</a><a class="btn-wa" href="https://wa.me/212663803875?text=%D8%A8%D8%BA%D9%8A%D8%AA%20%D8%A3%D8%AF%D8%A7%D8%A9%20Gemini%20%F0%9F%92%8E">اطلبها 💬</a></div>
+      </div>
+      <div class="tool fadeup">
+        <div class="ticon" style="background:rgba(248,113,113,.12);border:1px solid rgba(248,113,113,.3);font-size:1.6rem">🔬</div>
+        <h3>Google AI Studio</h3>
+        <p>جرّب أقوى نماذج غوغل مجانا: كتابة، صور، وفيديو</p>
+        <span class="cat" style="background:rgba(248,113,113,.12);color:#fca5a5">مجاني 100%</span>
+        <div class="acts"><a class="tget" href="https://aistudio.google.com">الموقع ↗</a><a class="btn-wa" href="https://wa.me/212663803875?text=%D8%A8%D8%BA%D9%8A%D8%AA%20%D8%A3%D8%AF%D8%A7%D8%A9%20Google%20AI%20Studio%20%F0%9F%94%AC">اطلبها 💬</a></div>
+      </div>
+      <div class="tool fadeup">
+        <div class="ticon" style="background:rgba(139,92,246,.12);border:1px solid rgba(139,92,246,.3);font-size:1.6rem">🎨</div>
+        <h3>Canva</h3>
+        <p>تصاميم وصور ومونطاج بالذكاء الاصطناعي — الأسهل فالعالم</p>
+        <span class="cat" style="background:rgba(139,92,246,.12);color:#c4b5fd">تصاميم</span>
+        <div class="acts"><a class="tget" href="https://www.canva.com">الموقع ↗</a><a class="btn-wa" href="https://wa.me/212663803875?text=%D8%A8%D8%BA%D9%8A%D8%AA%20%D8%A3%D8%AF%D8%A7%D8%A9%20Canva%20%F0%9F%8E%A8">اطلبها 💬</a></div>
+      </div>
+      <div class="tool fadeup">
+        <div class="ticon" style="background:rgba(244,114,182,.12);border:1px solid rgba(244,114,182,.3);font-size:1.6rem">🎬</div>
+        <h3>CapCut</h3>
+        <p>مونطاج فيديو بأدوات AI مجانية — ديال المؤثرين فتيك توك</p>
+        <span class="cat" style="background:rgba(244,114,182,.12);color:#f9a8d4">فيديو</span>
+        <div class="acts"><a class="tget" href="https://www.capcut.com">الموقع ↗</a><a class="btn-wa" href="https://wa.me/212663803875?text=%D8%A8%D8%BA%D9%8A%D8%AA%20%D8%A3%D8%AF%D8%A7%D8%A9%20CapCut%20%F0%9F%8E%AC">اطلبها 💬</a></div>
+      </div>
+      <div class="tool fadeup">
+        <div class="ticon" style="background:rgba(251,191,36,.12);border:1px solid rgba(251,191,36,.3);font-size:1.6rem">🎙️</div>
+        <h3>ElevenLabs</h3>
+        <p>أصوات طبيعية بالعربية والفرنسية — من نص لصوت حقيقي</p>
+        <span class="cat" style="background:rgba(251,191,36,.12);color:#fcd34d">صوت</span>
+        <div class="acts"><a class="tget" href="https://elevenlabs.io">الموقع ↗</a><a class="btn-wa" href="https://wa.me/212663803875?text=%D8%A8%D8%BA%D9%8A%D8%AA%20%D8%A3%D8%AF%D8%A7%D8%A9%20ElevenLabs%20%F0%9F%8E%99%EF%B8%8F">اطلبها 💬</a></div>
+      </div>
+      <div class="tool fadeup">
+        <div class="ticon" style="background:rgba(0,212,170,.12);border:1px solid rgba(0,212,170,.3);font-size:1.6rem">⚡</div>
+        <h3>Bolt.new</h3>
+        <p>من الفكرة لموقع شغال أونلاين فدقائق — بلا كود تقريبا</p>
+        <span class="cat" style="background:rgba(0,212,170,.12);color:#2dd4bf">مواقع سريعة</span>
+        <div class="acts"><a class="tget" href="https://bolt.new">الموقع ↗</a><a class="btn-wa" href="https://wa.me/212663803875?text=%D8%A8%D8%BA%D9%8A%D8%AA%20%D8%A3%D8%AF%D8%A7%D8%A9%20Bolt.new%20%E2%9A%A1">اطلبها 💬</a></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="lesson" style="max-width:900px;margin:70px auto 0;padding:0 20px">
+<div style="text-align:center;margin-bottom:26px"><span class="lvl" id="lesson-badge">درس اليوم</span>
+<h2 style="font-size:1.6rem;margin-top:14px" id="lesson-title">📖 درس اليوم</h2>
+<p style="color:var(--dim);max-width:560px;margin:10px auto;font-size:.95rem" id="lesson-intro"></p></div>
+<div id="lesson-body" style="max-width:760px;margin:0 auto"></div>
+
+</section>
+
+<section id="daily" style="background:linear-gradient(180deg,var(--bg2),var(--bg))">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="kicker">جديد كل يوم — الساعة 8:00 صباحا</span>
+      <h2>أداة اليوم 🌟</h2>
+      <p class="sec-sub">كل يوم أداة جديدة ديال الذكاء الاصطناعي ولا البرمجة — شرح كامل: كيفاش كتبحث عليها، كيفاش تبدا بيها، وكيفاش تستعملها صح</p>
+    </div>
+    <div class="fadeup" style="background:var(--card);border:1px solid rgba(251,191,36,.35);border-radius:22px;padding:34px 28px;max-width:860px;margin:auto" id="daily-card">
+      <div style="display:flex;align-items:center;gap:16px;flex-wrap:wrap">
+        <div class="ticon" style="width:62px;height:62px;margin:0;background:rgba(16,185,129,.12);border:1px solid rgba(16,185,129,.3)">
+          <span id="daily-icon" style="font-size:2rem">🤖</span>
+        </div>
+        <div>
+          <span class="lvl" id="daily-badge">أداة اليوم</span>
+          <h3 id="daily-title" style="font-size:1.5rem;font-weight:900">ChatGPT — سلاحك السري</h3>
+        </div>
+      </div>
+      <p id="daily-desc" style="color:var(--dim);line-height:2;margin-top:18px">مساعد ديال الذكاء الاصطناعي من OpenAI: كيجاوب على أي سؤال، كيشرح ليك الكود، كيصاوب ليك تصاميم ونصوص وبرامج. الأسهل للمبتدئ والأقوى للمحترف.</p>
+      <div style="margin-top:18px;display:grid;gap:12px">
+        <div style="background:rgba(0,212,170,.06);border:1px solid rgba(0,212,170,.18);border-radius:14px;padding:16px"><b style="color:var(--teal)">🔍 كيفاش كيقلبو عليها الناس؟</b><p style="color:var(--dim);font-size:.9rem;line-height:1.9;margin-top:6px">كتب فغوغل: ChatGPT ولا شات جي بي تي — أو دخل ديريكت ل chatgpt.com من المتصفح ولا من التطبيق. كيخدم من المتصفح فأي تيليفون.</p></div>
+        <div style="background:rgba(139,92,246,.06);border:1px solid rgba(139,92,246,.18);border-radius:14px;padding:16px"><b style="color:#c4b5fd">🚀 كيفاش تبدا بيها؟ (3 خطوات)</b><p style="color:var(--dim);font-size:.9rem;line-height:1.9;margin-top:6px">1. دخل ل chatgpt.com واصنع حساب ببريدك. 2. كتاب سؤالك فالمربع واضغط Enter. 3. جرب: "شرح ليا شنو هي البرمجة ببساطة" — وشوف النتيجة.</p></div>
+        <div style="background:rgba(251,191,36,.06);border:1px solid rgba(251,191,36,.18);border-radius:14px;padding:16px"><b style="color:var(--gold)">💡 المعلومة الصحيحة باش تستعملها مزيان</b><p style="color:var(--dim);font-size:.9rem;line-height:1.9;margin-top:6px">ماشي غير "صاوب ليا حاجة" — وضح: شنو بغيت، لمن، وفين غادي تستعملها. وضح الطلب = نتيجة أحسن 10 مرات. النسخة المجانية كافية للبداية.</p></div>
+      </div>
+      <div style="margin-top:20px;display:flex;gap:10px;flex-wrap:wrap">
+        <a href="https://chatgpt.com" class="btn btn-teal">جرّب الأداة دابا ↗</a>
+        <a href="https://wa.me/212663803875?text=%D8%A8%D8%BA%D9%8A%D8%AA%20%D8%B4%D8%B1%D8%AD%20%D8%AA%D9%81%D8%B5%D9%8A%D9%84%20%D8%AF%D8%A7%D9%86%20ChatGPT%20%F0%9F%A4%96" class="btn btn-wa">اطلب شرح 💬</a>
+      </div>
+    </div>
+    <div id="daily-archive-wrap" style="max-width:860px;margin:26px auto 0;display:none;background:var(--card);border:1px solid var(--line);border-radius:18px;padding:22px 26px">
+      <b style="color:var(--teal)">📚 الأدوات السابقة</b>
+      <div id="daily-archive" style="margin-top:8px"></div>
+    </div>
+    <p style="text-align:center;color:var(--dim);font-size:.85rem;margin-top:26px">📚 الأدوات السابقة كتبقى محفوظة هنا — الغدا: أداة جديدة الساعة 8:00 صباحا ⏰</p>
+  </div>
+</section>
+
+<section id="resources" style="background:var(--bg2)">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="kicker">كلشي فبلاصة وحدة</span>
+      <h2>الموارد والروابط 📦</h2>
+      <p class="sec-sub">كل اللي كيحتاجه المبتدئ: البريد، الأدوات، المواقع، والدليل الكامل — كلشي مجاني</p>
+    </div>
+    <div class="lessons">
+      <div class="lesson fadeup"><div class="lnum">📧</div><div><span class="lvl">الخطوة الأولى</span><h3>صنع بريد Gmail</h3><p>معظم أدوات الذكاء الاصطناعي كتحتاج بريد غوغل: 1. دخل لصفحة إنشاء الحساب. 2. كتاب البريد وكلمة السر. 3. أكد برقم التيليفون — وصافي ✅</p><a href="https://accounts.google.com/signup" style="display:inline-block;margin-top:10px;color:var(--teal);font-weight:700;font-size:.9rem">صاوب بريدك دابا ↗</a></div></div>
+      <div class="lesson fadeup"><div class="lnum">📖</div><div><span class="lvl">الدليل الكامل</span><h3>دليل المبتدئ من A إلى Z</h3><p>صفحة كاملة فيها كلشي بالترتيب: من صنع البريد، لأول محادثة مع الذكاء الاصطناعي، حتى أول مشروع برمجة.</p><a href="https://superagent-cc34a3f0.base44.app/functions/aiguide" style="display:inline-block;margin-top:10px;color:var(--teal);font-weight:700;font-size:.9rem">شوف الدليل الكامل ↗</a></div></div>
+      <div class="lesson fadeup"><div class="lnum">📚</div><div><span class="lvl">مجاني 100%</span><h3>مكتبة القوالب: aitmpl.com</h3><p>أكثر من 1000 قالب وأداة جاهزين للذكاء الاصطناعي والبرمجة — كتقلب عليهم، كتشوفهم، وكتركب اللي بغيت. كلشي بلاش.</p><a href="https://aitmpl.com" style="display:inline-block;margin-top:10px;color:var(--teal);font-weight:700;font-size:.9rem">دخل للمكتبة ↗</a></div></div>
+      <div class="lesson fadeup"><div class="lnum">🥷</div><div><span class="lvl">الأمن السيبراني</span><h3>pwn.college — تعلم الهاكينغ</h3><p>أقوى منصة مجانية فالعالم لتعلم الأمن السيبراني من جامعة أمريكية: 68 مسار، تحديات حقيقية، وأحزمة بحال الكاراطيه.</p><a href="https://pwn.college" style="display:inline-block;margin-top:10px;color:var(--teal);font-weight:700;font-size:.9rem">دخل للموقع ↗</a></div></div>
+    </div>
+    <div style="margin-top:34px;background:var(--card);border:1px solid var(--line);border-radius:18px;padding:26px">
+      <b style="color:var(--gold);font-size:1.05rem">🔗 روابط مباشرة لكل الأدوات — دوزر وكليكي</b>
+      <div class="plinks" style="margin-top:16px">
+        <a href="https://chatgpt.com" style="background:rgba(0,212,170,.08);border-color:rgba(0,212,170,.25)">💬 ChatGPT</a>
+        <a href="https://claude.ai" style="background:rgba(217,119,6,.08);border-color:rgba(217,119,6,.25)">⭐ Claude</a>
+        <a href="https://gemini.google.com" style="background:rgba(56,189,248,.08);border-color:rgba(56,189,248,.25)">💎 Gemini</a>
+        <a href="https://aistudio.google.com" style="background:rgba(248,113,113,.08);border-color:rgba(248,113,113,.25)">🔬 Google AI Studio</a>
+        <a href="https://www.canva.com" style="background:rgba(139,92,246,.08);border-color:rgba(139,92,246,.25)">🎨 Canva</a>
+        <a href="https://www.capcut.com" style="background:rgba(244,114,182,.08);border-color:rgba(244,114,182,.25)">🎬 CapCut</a>
+        <a href="https://runwayml.com" style="background:rgba(16,185,129,.08);border-color:rgba(16,185,129,.25)">🎥 Runway</a>
+        <a href="https://elevenlabs.io" style="background:rgba(251,191,36,.08);border-color:rgba(251,191,36,.25)">🎙️ ElevenLabs</a>
+        <a href="https://www.midjourney.com" style="background:rgba(236,72,153,.08);border-color:rgba(236,72,153,.25)">🖼️ Midjourney</a>
+        <a href="https://n8n.io" style="background:rgba(249,115,22,.08);border-color:rgba(249,115,22,.25)">⚙️ n8n</a>
+        <a href="https://bolt.new" style="background:rgba(0,212,170,.08);border-color:rgba(0,212,170,.25)">⚡ Bolt</a>
+        <a href="https://v0.dev" style="background:rgba(56,189,248,.08);border-color:rgba(56,189,248,.25)">🖥️ v0.dev</a>
+        <a href="https://cursor.com" style="background:rgba(244,114,182,.08);border-color:rgba(244,114,182,.25)">📝 Cursor</a>
+        <a href="https://replit.com" style="background:rgba(251,191,36,.08);border-color:rgba(251,191,36,.25)">🧩 Replit</a>
+        <a href="https://github.com" style="background:rgba(139,92,246,.08);border-color:rgba(139,92,246,.25)">🐙 GitHub</a>
+        <a href="https://www.freecodecamp.org" style="background:rgba(16,185,129,.08);border-color:rgba(16,185,129,.25)">🎓 freeCodeCamp</a>
+        <a href="https://www.w3schools.com" style="background:rgba(59,130,246,.08);border-color:rgba(59,130,246,.25)">📘 W3Schools</a>
+        <a href="https://pwn.college" style="background:rgba(239,68,68,.08);border-color:rgba(239,68,68,.25)">🥷 pwn.college</a>
+        <a href="https://aitmpl.com" style="background:rgba(217,119,6,.08);border-color:rgba(217,119,6,.25)">📚 aitmpl.com</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="library" style="background:var(--bg2)">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="kicker">مكتبة المواقع المجانية</span>
+      <h2>كل المواقع والأدوات المجانية فبلاصة وحدة 🗂️</h2>
+      <p class="sec-sub">مواقع تعلم البرمجة والحماية السيبرانية، وبوتات التليغرام — كلها مجانية 100% وتفتح مباشرة من الهاتف</p>
+    </div>
+    <h3 style="color:var(--gold);font-size:1.15rem;margin:34px 0 6px">🛡️ مواقع تعلم الحماية السيبرانية (مجانية)</h3>
+    <div class="lessons"><!--ADD-CYBER--><div class="lesson fadeup"><div class="lnum">🐐</div><div><span class="lvl">مجاني · تطبيق تدريبي</span><h3>OWASP WebGoat — تطبيق ويب مصمم للتعلّم بالاختراق</h3><p>تطبيق تدريبي من مشروع OWASP يعرض ثغرات ويب حقيقية في بيئة معزولة مع دروس مرافقة لكل ثغرة: الحقن، وإدارة الجلسات، والتحكم في الوصول. الهدف ليس الاستغلال العشوائي بل فهم سبب الثغرة وكيف تُصلح، ولذلك يُعد أفضل بداية عملية بعد قراءة النظرية.</p><a href="https://owasp.org/www-project-webgoat/" target="_blank" rel="noopener" style="color:var(--teal);font-weight:700;font-size:.9rem">فتح ↗</a></div></div><div class="lesson fadeup"><div class="lnum">🧨</div><div><span class="lvl">مجاني · تحديات ثنائية</span><h3>Exploit Education — مختبرات استغلال الذاكرة</h3><p>مجموعة تحديات مجانية بأجهزة افتراضية جاهزة للتنزيل، تتدرّج من أخطاء التخزين المؤقت في الذاكرة حتى الاستغلال المتقدّم. تشرح المفاهيم التي نتعلمها في pwn.college وتوفّر بيئة آمنة للتدريب بدل التجربة على أنظمة حقيقية.</p><a href="https://exploit.education" target="_blank" rel="noopener" style="color:var(--teal);font-weight:700;font-size:.9rem">فتح ↗</a></div></div>
+      <div class="lesson fadeup"><div class="lnum">🧃</div><div><span class="lvl">مجاني · تطبيق تدريبي حقيقي</span><h3>OWASP Juice Shop — تطبيق مصمم للاختراق</h3><p>تطبيق ويب مفتوح المصدر يحوي أكثر من مئة ثغرة مقصودة من قائمة OWASP العشر: حقن SQL، وتجاوز المصادقة، ورفع ملفات خطرة. يمكن تشغيله من المتصفح أو تثبيته محلياً، وهو أفضل تدريب أخلاقي لاختبار الويب بأمان.</p><a href="https://owasp.org/www-project-juice-shop/" target="_blank" rel="noopener" style="color:var(--teal);font-weight:700;font-size:.9rem">فتح ↗</a></div></div>
+      <div class="lesson fadeup"><div class="lnum">📚</div><div><span class="lvl">مجاني · مرجع مفتوح</span><h3>HackTricks — موسوعة تقنيات الاختراق</h3><p>مرجع تقني مفتوح يشرح خطوات الاختبار الأخلاقي وثغرات الويب والأنظمة وخدمات Active Directory بأمثلة عملية، محدَّث باستمرار، ويعمل من متصفح الهاتف.</p><a href="https://hacktricks.wiki" target="_blank" rel="noopener" style="color:var(--teal);font-weight:700;font-size:.9rem">فتح ↗</a></div></div><div class="lesson fadeup"><div class="lnum">🐧</div><div><span class="lvl">مجاني · تدريب عملي</span><h3>OverTheWire Bandit</h3><p>تحديات تفاعلية مجانية لتعلّم أساسيات لينكس والطرفية خطوة بخطوة، مناسبة للمبتدئين وتعمل عبر اتصال SSH من الحاسوب أو تطبيق طرفية متوافق.</p><a href="https://overthewire.org/wargames/bandit/" target="_blank" rel="noopener" style="color:var(--teal);font-weight:700;font-size:.9rem">فتح ↗</a></div></div><div class="lesson fadeup"><div class="lnum">🕵️</div><div><span class="lvl">مجاني · تدريب عملي</span><h3>CyberDefenders</h3><p>منصة تدريب مجانية للتحقيق الرقمي والاستجابة للحوادث (Blue Team): سيناريوهات تحقيقات حقيقية بملفات وأدلة تُحلَّل خطوة بخطوة من المتصفح، مع شهادات مجانية بعد كل تحدٍّ.</p><a href="https://cyberdefenders.org" target="_blank" rel="noopener" style="color:var(--teal);font-weight:700;font-size:.9rem">فتح ↗</a></div></div><div class="lesson fadeup"><div class="lnum">🔐</div><div><span class="lvl">مجاني · تحديات في المتصفح</span><h3>CryptoHack</h3><p>منصة تحديات مجانية لتعلّم التشفير من الصفر حتى المستوى المتقدم: تحديات تفاعلية مباشرة من المتصفح تغطي التشفير الكلاسيكي والحديث خطوة بخطوة.</p><a href="https://cryptohack.org" target="_blank" rel="noopener" style="color:var(--teal);font-weight:700;font-size:.9rem">فتح ↗</a></div></div><div class="lesson fadeup"><div class="lnum">🐞</div><div><span class="lvl">مجاني · من HackerOne رسمياً</span><h3>Hacker101</h3><p>مدرسة HackerOne الرسمية لاكتشاف ثغرات مواقع الويب: دروس وفيديوهات وتمارين عملية مجانية، وطريقك الأول نحو عالم مكافآت اكتشاف الثغرات (Bug Bounty).</p><a href="https://www.hacker101.com" target="_blank" rel="noopener" style="color:var(--teal);font-weight:700;font-size:.9rem">فتح ↗</a></div></div><div class="lesson fadeup"><div class="lnum">🛡️</div><div><span class="lvl">GitHub · مفتوح المصدر</span><h3>Strix — AI Penetration Testing</h3><p>وكيل ذكاء اصطناعي يهاجم تطبيقك مثل هاكر حقيقي ليكتشف الثغرات ويصلحها. مفتوح المصدر ومجاني (73 ألف نجمة على GitHub).</p><a href="https://github.com/usestrix/strix" target="_blank" rel="noopener" style="color:var(--teal);font-weight:700;font-size:.9rem">فتح ↗</a></div></div><div class="lesson fadeup"><div class="lnum">🧠</div><div><span class="lvl">GitHub · مفتوح المصدر</span><h3>claude-mem — ذاكرة دائمة</h3><p>إضافة تمنح المساعد ذاكرة مستمرة عبر كل الجلسات: يتذكر مشاريعك وملفاتك بلا إعادة الشرح. (108 آلاف نجمة).</p><a href="https://github.com/thedotmack/claude-mem" target="_blank" rel="noopener" style="color:var(--teal);font-weight:700;font-size:.9rem">فتح ↗</a></div></div><div class="lesson fadeup"><div class="lnum">🔌</div><div><span class="lvl">GitHub · رسمي</span><h3>Claude Code — الإضافات الرسمية</h3><p>المستودع الرسمي لأداة Claude Code من Anthropic، ومنه تُثبَّت الإضافات والوكلاء وأدوات MCP.</p><a href="https://github.com/anthropics/claude-code" target="_blank" rel="noopener" style="color:var(--teal);font-weight:700;font-size:.9rem">فتح ↗</a></div></div><div class="lesson fadeup"><div class="lnum">🔐</div><div><span class="lvl">مجاني · GCHQ مفتوح المصدر</span><h3>CyberChef — مختبر الأمن السيبراني</h3><p>ترميز وفك التشفير وتحليل الهاش والبيانات المشفرة، كلها من المتصفح بلا تسجيل. أداة أساسية لمتعلمي الأمن السيبراني.</p><a href="https://gchq.github.io/CyberChef/" target="_blank" rel="noopener" style="color:var(--teal);font-weight:700;font-size:.9rem">فتح ↗</a></div></div><div class="lesson fadeup"><div class="lnum">🚩</div><div><span class="lvl">مجاني</span><h3>CTFtime</h3><p>المرجع العالمي لمسابقات الاختراق (CTF): تقويم المسابقات القادمة وحلول مكتوبة (Writeups) تتعلم منها الأسلوب الحقيقي للمحترفين.</p><a href="https://ctftime.org" style="color:var(--teal);font-weight:700;font-size:.9rem">ctftime.org ↗</a></div></div>
+      <div class="lesson fadeup"><div class="lnum">🥋</div><div><span class="lvl">الأفضل للبداية</span><h3>pwn.college</h3><p>منصة كاملة من جامعة أريزونا: تدريب عملي داخل المتصفح، أحزمة من الأبيض حتى الأسود. من هنا كنبداو الطريق ديالنا.</p><a href="https://pwn.college" style="color:var(--teal);font-weight:700;font-size:.9rem">pwn.college ↗</a></div></div>
+      <div class="lesson fadeup"><div class="lnum">🌐</div><div><span class="lvl">مجاني 100%</span><h3>PortSwigger Web Security Academy</h3><p>أفضل أكاديمية لتعلم ثغرات المواقع (XSS، SQL Injection...) بتمارين عملية حقيقية، مجانية بالكامل من مطوري Burp Suite.</p><a href="https://portswigger.net/web-security" style="color:var(--teal);font-weight:700;font-size:.9rem">portswigger.net ↗</a></div></div>
+      <div class="lesson fadeup"><div class="lnum">🎮</div><div><span class="lvl">تدريب عملي</span><h3>TryHackMe</h3><p>غرف تدريب تفاعلية خطوة بخطوة: تتعلم الاختراق الأخلاقي فمتصفحك. غرف مجانية كثيرة للمبتدئين.</p><a href="https://tryhackme.com" style="color:var(--teal);font-weight:700;font-size:.9rem">tryhackme.com ↗</a></div></div>
+      <div class="lesson fadeup"><div class="lnum">📦</div><div><span class="lvl">مجاني</span><h3>Hack The Box</h3><p>أجهزة حقيقية للاختراق الأخلاقي بمستويات مختلفة. الخطة المجانية كتكفيك لبداية قوية.</p><a href="https://www.hackthebox.com" style="color:var(--teal);font-weight:700;font-size:.9rem">hackthebox.com ↗</a></div></div>
+      <div class="lesson fadeup"><div class="lnum">⚔️</div><div><span class="lvl">ألعاب هكر</span><h3>OverTheWire</h3><p>ألعاب حرب (Wargames) كتعلمك اللينداكس والهكر عبر تحديات متدرجة — مجانية بالكامل وبلا تسجيل معقد.</p><a href="https://overthewire.org" style="color:var(--teal);font-weight:700;font-size:.9rem">overthewire.org ↗</a></div></div>
+      <div class="lesson fadeup"><div class="lnum">🚩</div><div><span class="lvl">CTF مجاني</span><h3>picoCTF</h3><p>مسابقة تدريب سيبرانية من معهد كارنيجي ميلون، مخصصة للمبتدئين بتحديات ممتعة ومجانية.</p><a href="https://picoctf.org" style="color:var(--teal);font-weight:700;font-size:.9rem">picoctf.org ↗</a></div></div>
+      <div class="lesson fadeup"><div class="lnum">🇫🇷</div><div><span class="lvl">تحديات</span><h3>Root-Me</h3><p>أكثر من 500 تحدي في الحماية السيبرانية: ويب، شبكات، كريبتو، فورينسيك. مجاني بالكامل.</p><a href="https://www.root-me.org" style="color:var(--teal);font-weight:700;font-size:.9rem">root-me.org ↗</a></div></div>
+      <div class="lesson fadeup"><div class="lnum">🧪</div><div><span class="lvl">مختبرات</span><h3>HackXpert</h3><p>مختبرات وتدريبات عملية مجانية في اختبار الاختراق، من خبراء معروفين فالمجال.</p><a href="https://hackxpert.com" style="color:var(--teal);font-weight:700;font-size:.9rem">hackxpert.com ↗</a></div></div>
+      <div class="lesson fadeup"><div class="lnum">🛠️</div><div><span class="lvl">مرجع مفتوح</span><h3>OWASP</h3><p>المرجع العالمي المفتوح لأمان التطبيقات: أدلة، قوائم الثغرات، وكل ما تحتاجه لتعلم الحماية بشكل صحيح.</p><a href="https://owasp.org" style="color:var(--teal);font-weight:700;font-size:.9rem">owasp.org ↗</a></div></div>
+      <div class="lesson fadeup"><div class="lnum">🎓</div><div><span class="lvl">شهادات مجانية</span><h3>Fortinet + Cisco Networking Academy</h3><p>دورات مجانية مع شهادات: أساسيات الشبكات والأمن السيبراني من شركات عالمية معترف بها.</p><a href="https://www.fortinet.com/training/cybersecurity-professionals" style="color:var(--teal);font-weight:700;font-size:.9rem">fortinet.com ↗</a> <a href="https://www.netacad.com" style="color:var(--teal);font-weight:700;font-size:.9rem">netacad.com ↗</a></div></div>
+    </div>
+    <h3 style="color:var(--gold);font-size:1.15rem;margin:44px 0 6px">💻 مواقع تعلم البرمجة (مجانية)</h3>
+    <div class="lessons"><!--ADD-CODE--><div class="lesson fadeup"><div class="lnum">📜</div><div><span class="lvl">مجاني · بلا تسجيل</span><h3>The Algorithms — مكتبة خوارزميات بلغات متعددة</h3><p>مكتبة مفتوحة تشرح الخوارزميات وهياكل البيانات بالكود الجاهز في أكثر من عشرين لغة برمجة، مع ترتيب حسب الاسم والمستوى. تُستخدم لقراءة التنفيذ الحقيقي للخوارزمية بلغتك بدل الاكتفاء بالوصف النظري.</p><a href="https://the-algorithms.com" target="_blank" rel="noopener" style="color:var(--teal);font-weight:700;font-size:.9rem">فتح ↗</a></div></div>
+      <div class="lesson fadeup"><div class="lnum">🦀</div><div><span class="lvl">مجاني · بلا تسجيل</span><h3>Rust Playground — شغّل كود Rust في المتصفح</h3><p>بيئة تنفيذ رسمية للغة Rust تعمل من المتصفح دون تثبيت: اكتب الشيفرة وشغّلها واختبر النتائج فوراً، مع حفظ المشاركة برابط. مناسبة لتعلّم لغة الأنظمة التي تستخدم في الأدوات الأمنية والمحرّكات الحديثة.</p><a href="https://play.rust-lang.org" target="_blank" rel="noopener" style="color:var(--teal);font-weight:700;font-size:.9rem">فتح ↗</a></div></div>
+      <div class="lesson fadeup"><div class="lnum">🎯</div><div><span class="lvl">مجاني · مشاريع عملية</span><h3>Frontend Mentor — تمارين واجهات حقيقية</h3><p>تحديات تصميم واجهات بمستويات متدرجة مع تصاميم جاهزة ومجتمع للمراجعة، وهو أفضل تدريب على تحويل التصميم إلى كود متجاوب. المجانية تشمل التحديات الأساسية.</p><a href="https://www.frontendmentor.io" target="_blank" rel="noopener" style="color:var(--teal);font-weight:700;font-size:.9rem">فتح ↗</a></div></div><div class="lesson fadeup"><div class="lnum">🌐</div><div><span class="lvl">مجاني · تعلّم تفاعلي</span><h3>freeCodeCamp</h3><p>منهج مجاني لتعلّم تطوير الويب والبرمجة عبر دروس وتمارين عملية، مع مسارات منظمة ومشروعات تطبيقية. يمكن فتح المحتوى من متصفح الهاتف.</p><a href="https://www.freecodecamp.org/learn/" target="_blank" rel="noopener" style="color:var(--teal);font-weight:700;font-size:.9rem">فتح ↗</a></div></div><div class="lesson fadeup"><div class="lnum">🇫🇮</div><div><span class="lvl">مجاني 100% · جامعي</span><h3>Full Stack Open — جامعة هلسنكي</h3><p>أفضل مقرر جامعي مفتوح لتعلّم تطوير الويب الحديث: React وNode وقواعد البيانات والاختبارات، بنفس منهج الجامعة وبلا رسوم ولا تسجيل مدفوع، ويعمل من الهاتف.</p><a href="https://fullstackopen.com" target="_blank" rel="noopener" style="color:var(--teal);font-weight:700;font-size:.9rem">فتح ↗</a></div></div><div class="lesson fadeup"><div class="lnum">🗄️</div><div><span class="lvl">مجاني · تفاعلي</span><h3>SQLBolt</h3><p>دروس قواعد البيانات (SQL) الأكثر سهولة على الشبكة: تتعلم بالكتابة والتنفيذ الفوري في الموقع درساً بعد درس حتى تتقن الاستعلامات من الهاتف مباشرة.</p><a href="https://sqlbolt.com" target="_blank" rel="noopener" style="color:var(--teal);font-weight:700;font-size:.9rem">فتح ↗</a></div></div><div class="lesson fadeup"><div class="lnum">🎯</div><div><span class="lvl">مجاني · لعبة تعليمية</span><h3>CSSBattle</h3><p>تحديات ممتعة لتعلم CSS: تبدو لعبة، لكنها تدريب يومي رياضي على تنسيق الويب — تكتب الكود وتضيف الهدف بصرياً وتحصل على نقاط.</p><a href="https://cssbattle.dev" target="_blank" rel="noopener" style="color:var(--teal);font-weight:700;font-size:.9rem">فتح ↗</a></div></div><div class="lesson fadeup"><div class="lnum">🎨</div><div><span class="lvl">مهارة مرتبطة · مجانية</span><h3>Hallmark — تصميم بلا طابع الذكاء الاصطناعي</h3><p>مهارة تصميم لـClaude Code تمنع الواجهات النمطية وتنتج تصاميم أصلية بذوق بشري (44 ألف نجمة). مرتبطة عندي.</p><a href="https://github.com/Nutlope/hallmark" target="_blank" rel="noopener" style="color:var(--teal);font-weight:700;font-size:.9rem">فتح ↗</a></div></div><div class="lesson fadeup"><div class="lnum">👅</div><div><span class="lvl">مهارة مرتبطة · مجانية</span><h3>Taste Skill — هندسة الذوق البصري</h3><p>مهارة تعيد هندسة ذوق أي موقع: الألوان، الخطوط، التباعد، والحركة — لبناء تصميم بمستوى Awwwards. مرتبطة عندي.</p><a href="https://github.com/senlindesign/taste-skill" target="_blank" rel="noopener" style="color:var(--teal);font-weight:700;font-size:.9rem">فتح ↗</a></div></div><div class="lesson fadeup"><div class="lnum">📅</div><div><span class="lvl">مهارة مرتبطة · مجانية</span><h3>Last 30 Days — بحث عبر المنصات</h3><p>مهارة تبحث عن أي موضوع في آخر 30 يوماً عبر Reddit وX ويوتيوب وHacker News وتصنع تقريراً بمصادر (66 ألف نجمة). مرتبطة عندي.</p><a href="https://github.com/mvanhorn/last30days-skill" target="_blank" rel="noopener" style="color:var(--teal);font-weight:700;font-size:.9rem">فتح ↗</a></div></div><div class="lesson fadeup"><div class="lnum">🕷️</div><div><span class="lvl">مهارة مرتبطة · مجانية</span><h3>Scrapling — استخراج بيانات الويب</h3><p>إطار استخراج بيانات سريع يتجاوز الحماية ويشتغل على أي موقع (91 ألف نجمة). مثبت عندي وجاهز للاستعمال.</p><a href="https://github.com/D4Vinci/Scrapling" target="_blank" rel="noopener" style="color:var(--teal);font-weight:700;font-size:.9rem">فتح ↗</a></div></div><div class="lesson fadeup"><div class="lnum">🌈</div><div><span class="lvl">مهارة مرتبطة · مجانية</span><h3>UI/UX Pro Max</h3><p>مهارة تصميم واجهات متكاملة: تسلسل هرمي، تباين، وحركة — جزء من مكتبتي منذ أول دفعة.</p><a href="https://github.com/davila7/claude-code-templates" target="_blank" rel="noopener" style="color:var(--teal);font-weight:700;font-size:.9rem">فتح ↗</a></div></div><div class="lesson fadeup"><div class="lnum">⌨️</div><div><span class="lvl">مجاني · بلا تسجيل</span><h3>JS Bin — اكتب وشغّل الكود فوراً</h3><p>محرر JavaScript وHTML وCSS مع تشغيل مباشر في المتصفح: مثالي لتجربة الأفكار البرمجية بسرعة.</p><a href="https://jsbin.com" target="_blank" rel="noopener" style="color:var(--teal);font-weight:700;font-size:.9rem">فتح ↗</a></div></div><div class="lesson fadeup"><div class="lnum">🐍</div><div><span class="lvl">مجاني · يعمل في المتصفح</span><h3>Python Tutor — شاهد الكود كيف يعمل</h3><p>يعرض تنفيذ الشيفرة خطوة بخطوة بالرسوم: أداة عالمية مجانية لفهم البرمجة بعمق من أول يوم.</p><a href="https://pythontutor.com" target="_blank" rel="noopener" style="color:var(--teal);font-weight:700;font-size:.9rem">فتح ↗</a></div></div><div class="lesson fadeup"><div class="lnum">🆓</div><div><span class="lvl">GitHub · مفتوح المصدر</span><h3>OpenClaude</h3><p>تشغيل Claude Code مع أي نموذج ذكاء اصطناعي — حتى النماذج المحلية المجانية. نسخة مفتوحة المصدر تتيح لك العمل بلا اشتراك مدفوع.</p><a href="https://github.com/Twigpine/openclaude" target="_blank" rel="noopener" style="color:var(--teal);font-weight:700;font-size:.9rem">فتح ↗</a></div></div><div class="lesson fadeup"><div class="lnum">📺</div><div><span class="lvl">يعمل في المتصفح · مجاني</span><h3>Invidious</h3><p>مشاهدة يوتيوب بلا إعلانات وبلا تتبّع. استعمل النسخة العمومية مباشرة من الهاتف، أو شغّل نسختك الخاصة من GitHub.</p><a href="https://yewtu.be" target="_blank" rel="noopener" style="color:var(--teal);font-weight:700;font-size:.9rem">فتح ↗</a></div></div><div class="lesson fadeup"><div class="lnum">🎓</div><div><span class="lvl">GitHub · مجاني</span><h3>OpenMAIC</h3><p>فص�� دراسي تفاعلي بالذكاء الاصطناعي: مدرّس آلي يشرح الدرس ويولّد الشرائح والتمارين. مشروع جامعة تسينغهوا المفتوح.</p><a href="https://github.com/THU-MAIC/OpenMAIC" target="_blank" rel="noopener" style="color:var(--teal);font-weight:700;font-size:.9rem">فتح ↗</a></div></div><div class="lesson fadeup"><div class="lnum">📚</div><div><span class="lvl">GitHub · مفتوح المصدر</span><h3>Academic Research Skills</h3><p>مهارات بحث أكاديمي لـClaude Code: من جمع المصادر إلى الكتابة والمراجعة النهائية — للطلاب والباحثين.</p><a href="https://github.com/Imbad0202/academic-research-skills" target="_blank" rel="noopener" style="color:var(--teal);font-weight:700;font-size:.9rem">فتح ↗</a></div></div><div class="lesson fadeup"><div class="lnum">🧠</div><div><span class="lvl">GitHub · مفتوح المصدر</span><h3>MiniMind</h3><p>تدرّب نموذج لغوي صغير من الصفر في ساعتين — أفضل مشروع عملي لفهم كيف يُبنى الذكاء الاصطناعي خطوة بخطوة.</p><a href="https://github.com/jingyaogong/minimind" target="_blank" rel="noopener" style="color:var(--teal);font-weight:700;font-size:.9rem">فتح ↗</a></div></div><div class="lesson fadeup"><div class="lnum">📗</div><div><span class="lvl">مجاني 100%</span><h3>JavaScript.info</h3><p>أفضل شرح منظم لجافاسكريبت على الإنترنت: من الأساسيات حتى المواضيع المتقدمة، بأمثلة تفاعلية ومجانية بالكامل.</p><a href="https://javascript.info" style="color:var(--teal);font-weight:700;font-size:.9rem">javascript.info ↗</a></div></div>
+      <div class="lesson fadeup"><div class="lnum">🔥</div><div><span class="lvl">الأشمل</span><h3>freeCodeCamp</h3><p>مناهج كاملة بالشهادات: تطوير الويب، بايثون، جافاسكريبت، قواعد البيانات. مجاني 100% ومليان تمارين.</p><a href="https://www.freecodecamp.org" style="color:var(--teal);font-weight:700;font-size:.9rem">freecodecamp.org ↗</a></div></div>
+      <div class="lesson fadeup"><div class="lnum">🛤️</div><div><span class="lvl">منهج متكامل</span><h3>The Odin Project</h3><p>منهج كامل مجاني لتصبح مطور ويب من الصفر حتى الاحتراف، مع مشاريع حقيقية فكل مرحلة.</p><a href="https://www.theodinproject.com" style="color:var(--teal);font-weight:700;font-size:.9rem">theodinproject.com ↗</a></div></div>
+      <div class="lesson fadeup"><div class="lnum">📚</div><div><span class="lvl">مرجع سريع</span><h3>W3Schools</h3><p>شرح مبسط لكل لغة وتقنية ويب مع محرر تجارب مباشر: HTML، CSS، JavaScript، Python، SQL.</p><a href="https://www.w3schools.com" style="color:var(--teal);font-weight:700;font-size:.9rem">w3schools.com ↗</a></div></div>
+      <div class="lesson fadeup"><div class="lnum">📖</div><div><span class="lvl">المرجع الرسمي</span><h3>MDN Web Docs</h3><p>المرجع الرسمي من موزيلا لكل ما يخص الويب: HTML وCSS وJavaScript. المصدر اللي كيعتمدو المحترفين.</p><a href="https://developer.mozilla.org" style="color:var(--teal);font-weight:700;font-size:.9rem">developer.mozilla.org ↗</a></div></div>
+      <div class="lesson fadeup"><div class="lnum">🗺️</div><div><span class="lvl">خرائط الطريق</span><h3>roadmap.sh</h3><p>خرائط طريق مرسومة لكل مسار: Frontend، Backend، بايثون، الأمن السيبراني، الذكاء الاصطناعي. كتوري فين نت وماهمش غالط.</p><a href="https://roadmap.sh" style="color:var(--teal);font-weight:700;font-size:.9rem">roadmap.sh ↗</a></div></div>
+      <div class="lesson fadeup"><div class="lnum">🥇</div><div><span class="lvl">دورة هارفارد</span><h3>CS50</h3><p>الدورة الأسطورية ديال هارفارد فعلوم الحاسوب، مجانية بالكامل مع محاضرات وتمارين ومشاريع.</p><a href="https://cs50.harvard.edu/x" style="color:var(--teal);font-weight:700;font-size:.9rem">cs50.harvard.edu ↗</a></div></div>
+      <div class="lesson fadeup"><div class="lnum">🏋️</div><div><span class="lvl">تمارين</span><h3>Exercism</h3><p>تمارين برمجية بأكثر من 60 لغة مع مراجعة مجانية من مدربين متطوعين.</p><a href="https://exercism.org" style="color:var(--teal);font-weight:700;font-size:.9rem">exercism.org ↗</a></div></div>
+      <div class="lesson fadeup"><div class="lnum">🥋</div><div><span class="lvl">تحديات</span><h3>Codewars</h3><p>تحديات برمجية بأسلوب الأحزمة (كاراطيه): تحل مشاكل حقيقية وترتقي فالمستوى — مجاني.</p><a href="https://www.codewars.com" style="color:var(--teal);font-weight:700;font-size:.9rem">codewars.com ↗</a></div></div>
+      <div class="lesson fadeup"><div class="lnum">🎓</div><div><span class="lvl">جامعة مفتوحة</span><h3>MIT OpenCourseWare</h3><p>محاضرات ومقررات معهد MIT كاملة ومجانية: من مقدمة البرمجة حتى الذكاء الاصطناعي المتقدم.</p><a href="https://ocw.mit.edu" style="color:var(--teal);font-weight:700;font-size:.9rem">ocw.mit.edu ↗</a></div></div>
+      <div class="lesson fadeup"><div class="lnum">✏️</div><div><span class="lvl">للمبتدئين</span><h3>Khan Academy</h3><p>دروس مبسطة جداً للبرمجة والرياضيات والخوارزميات — مثالية للبداية من الصفر.</p><a href="https://www.khanacademy.org" style="color:var(--teal);font-weight:700;font-size:.9rem">khanacademy.org ↗</a></div></div>
+    </div>
+    <h3 style="color:var(--gold);font-size:1.15rem;margin:44px 0 6px">🤖 بوتات التليغرام المفيدة (مجانية)</h3>
+    <div style="background:var(--card);border:1px solid var(--line);border-radius:18px;padding:26px">
+      <p style="color:#c4ccd8;font-size:.95rem;line-height:1.9;margin:0 0 18px">هاد البوتات كتحصل عليها فالبحث ديال التليغرام (المربع فوق) — كتب الـ @ وسمية البوت ديريكت. كلها مجانية:</p>
+      <div style="display:flex;flex-wrap:wrap;gap:10px;justify-content:center"><!--ADD-BOTS--><a href="https://t.me/creationdatebot" target="_blank" rel="noopener" style="padding:10px 18px;border-radius:12px;background:rgba(56,189,248,.08);border:1px solid rgba(56,189,248,.25);font-weight:700;font-size:.9rem">📅 @creationdatebot — تاريخ إنشاء حساب تيليغرام</a><a href="https://t.me/SangMata_BOT" target="_blank" rel="noopener" style="padding:10px 18px;border-radius:12px;background:rgba(139,92,246,.08);border:1px solid rgba(139,92,246,.25);font-weight:700;font-size:.9rem">🕵️ @SangMata_BOT — تاريخ تغيير الأسماء واليوزرات</a><a href="https://t.me/TikTokDownBot" target="_blank" rel="noopener" style="padding:10px 18px;border-radius:12px;background:rgba(217,119,6,.08);border:1px solid rgba(217,119,6,.25);font-weight:700;font-size:.9rem">🎵 @TikTokDownBot — تنزيل فيديو تيك توك بلا علامة مائية</a><a href="https://t.me/TermuxBot" target="_blank" rel="noopener" style="padding:10px 18px;border-radius:12px;background:rgba(34,197,94,.08);border:1px solid rgba(34,197,94,.25);font-weight:700;font-size:.9rem">🐧 @TermuxBot — مساعدة تشغيل لينكس على أندرويد</a>
+      <div class="lesson fadeup"><div class="lnum">🧪</div><div><span class="lvl">مجاني · بلا تسجيل</span><h3>AI SDK Playground — قارن عدة نماذج في واجهة واحدة</h3><p>ساحة اختبار مفتوحة تتيح تجربة عدة نماذج ذكاء اصطناعي من مزودين مختلفين في الواجهة نفسها، دون إنشاء حساب. مفيدة لمقارنة جودة الإجابة العربية بين نموذجين قبل اعتماد أحدهما في عملك.</p><a href="https://sdk.vercel.ai/playground" target="_blank" rel="noopener" style="color:var(--teal);font-weight:700;font-size:.9rem">فتح ↗</a></div></div>
+      <div class="lesson fadeup"><div class="lnum">🌐</div><div><span class="lvl">مساعد مجاني · بلا حساب مطلوب</span><h3>Qwen Chat — مساعد ذكاء اصطناعي بديل</h3><p>واجهة محادثة مجانية من فريق Qwen الصيني، جيدة في العربية والبرمجة وتحليل الملفات النصية، وتعمل من متصفح الهاتف. الاستخدام المجاني يخضع لحدود يومية قد تتغير.</p><a href="https://chat.qwen.ai" target="_blank" rel="noopener" style="color:var(--teal);font-weight:700;font-size:.9rem">فتح ↗</a></div></div><div class="lesson fadeup"><div class="lnum">🤖</div><div><span class="lvl">مساعد مجاني · حساب Google</span><h3>Google AI Studio</h3><p>مساحة لتجربة نماذج Gemini وصياغة التعليمات وبناء نماذج أولية للذكاء الاصطناعي. الاستخدام المجاني وحدوده يخضعان لشروط Google والمنطقة.</p><a href="https://aistudio.google.com" target="_blank" rel="noopener" style="color:var(--teal);font-weight:700;font-size:.9rem">فتح ↗</a></div></div><a href="https://t.me/PythonBot" style="padding:10px 18px;border-radius:12px;background:rgba(16,185,129,.08);border:1px solid rgba(16,185,129,.25);font-weight:700;font-size:.9rem">🐍 @PythonBot — مساعد بايثون: يشرح الكود ويصحّح الأخطاء</a><a href="https://t.me/wiki" style="padding:10px 18px;border-radius:12px;background:rgba(34,197,94,.08);border:1px solid rgba(34,197,94,.25);font-weight:700;font-size:.9rem">📚 @wiki — بحث فوري في ويكيبيديا بلا إعلانات</a><a href="https://t.me/QuizBot" style="padding:10px 18px;border-radius:12px;background:rgba(16,185,129,.08);border:1px solid rgba(16,185,129,.25);font-weight:700;font-size:.9rem">🎓 @QuizBot — إنشاء اختبارات مراجعة تفاعلية</a><a href="https://t.me/DrWebBot" style="padding:10px 18px;border-radius:12px;background:rgba(34,197,94,.08);border:1px solid rgba(34,197,94,.25);font-weight:700;font-size:.9rem">🛡️ @DrWebBot — فحص الروابط والملفات من الفيروسات</a>
+        <a href="https://t.me/CompileBot" style="padding:10px 18px;border-radius:12px;background:rgba(0,212,170,.08);border:1px solid rgba(0,212,170,.25);font-weight:700;font-size:.9rem">⚙️ @CompileBot — تشغيل الأكواد</a>
+        <a href="https://t.me/rextester_bot" style="padding:10px 18px;border-radius:12px;background:rgba(217,119,6,.08);border:1px solid rgba(217,119,6,.25);font-weight:700;font-size:.9rem">🧪 @rextester_bot — تجربة أكواد بأكثر من 30 لغة</a>
+        <a href="https://t.me/GitHubBot" style="padding:10px 18px;border-radius:12px;background:rgba(139,92,246,.08);border:1px solid rgba(139,92,246,.25);font-weight:700;font-size:.9rem">🐙 @GitHubBot — إشعارات GitHub</a>
+        <a href="https://t.me/integram_bot" style="padding:10px 18px;border-radius:12px;background:rgba(56,189,248,.08);border:1px solid rgba(56,189,248,.25);font-weight:700;font-size:.9rem">🔗 @integram_bot — ربط أدوات التطوير</a>
+        <a href="https://t.me/bot_list_hub" style="padding:10px 18px;border-radius:12px;background:rgba(251,191,36,.08);border:1px solid rgba(251,191,36,.25);font-weight:700;font-size:.9rem">🗂️ @bot_list_hub — دليل بوتات جديدة كل يوم</a>
+      </div>
+      <p style="color:#c4ccd8;font-size:.88rem;line-height:1.9;margin:16px 0 0">نصيحة: حذار من بوتات "الهكر" المزيفة اللي كتطلب فلوس ولا بيانات شخصية — الخدمة الحقيقية ديال الحماية السيبرانية كتتعلمها فالمواقع الشرعية اللي فوق.</p>
+    </div>
+  </div>
+</section>
+
+<section id="register">
+  <div class="wrap">
+    <div class="regbox fadeup">
+      <h2>انضم إلى الأكاديمية — مجاني 100% 🥋</h2>
+      <p class="rsp">أدخل معلوماتك واضغط "تسجيل" — ستفتح لك محادثة واتساب مباشرة معنا: نرشدك إلى المسار والأدوات المناسبة لأهدافك. مقعدك في الحزام الأبيض بانتظارك.</p>
+      <div class="rform">
+        <span class="lbl">الاسم الكامل *</span>
+        <input id="reg-name" type="text" placeholder="مثال: يوسف بنعلي" autocomplete="name">
+        <span class="lbl">رقم الواتساب (اختياري)</span>
+        <input id="reg-phone" type="tel" placeholder="06xxxxxxxx" autocomplete="tel">
+        <span class="lbl">ما الذي تريد تعلمه؟ *</span>
+        <input id="reg-goal" type="text" placeholder="مثال: تعلم الذكاء الاصطناعي، أداة معينة، بناء أول موقع">
+      </div>
+      <button class="btn btn-grad" style="margin-top:20px;width:100%;justify-content:center;font-size:1.05rem;padding:14px" onclick="regSubmit()">سجل الآن عبر واتساب 🥋</button>
+      <p style="color:var(--dim);font-size:.78rem;margin-top:12px">بالتسجيل تتواصل مباشرة مع أستاذ الأكاديمية على واتساب — بدون أي رسوم أو التزام.</p>
+    </div>
+  </div>
+</section>
+
+<section id="nosignups" style="max-width:1000px;margin:70px auto 0;padding:0 20px">
+<div style="text-align:center;margin-bottom:26px">
+<span style="display:inline-block;background:rgba(0,212,170,.12);color:var(--teal);padding:6px 16px;border-radius:20px;font-size:.85rem">مجاني 100% — بلا تسجيل</span>
+<h2 style="font-size:1.6rem;margin:14px 0 8px">🧰 أدوات مفتوحة المصدر — بلا تسجيل</h2>
+<p style="color:#c4ccd8;max-width:620px;margin:0 auto;font-size:.93rem">أدوات احترافية تعمل مباشرة في المتصفح من الهاتف أو الحاسوب، دون حساب ولا تثبيت. المصدر: nosignups.net — يتم إضافة المزيد كل صباح.</p>
+<p id="nsu-count" style="color:var(--gold);font-size:.85rem;margin-top:8px"></p>
+</div>
+<div id="nsu-body"></div>
+</section>
+
+<section id="security-tools" style="max-width:1000px;margin:70px auto 0;padding:0 20px">
+<div style="text-align:center;margin-bottom:24px">
+<span style="display:inline-block;background:rgba(0,212,170,.12);color:var(--teal);padding:6px 16px;border-radius:20px;font-size:.85rem">أدوات مجانية · مفتوحة المصدر</span>
+<h2 style="font-size:1.55rem;margin:14px 0 8px">🔐 فحص الأمان والخصوصية</h2>
+<p style="color:#c4ccd8;max-width:640px;margin:0 auto;font-size:.93rem">تحقّق إن كان بريدك أو رقمك مسرّباً، افحص أي رابط مشبوهاً قبل فتحه، واكتشف أين استُخدمت صورتك. كل الأدوات مجانية وتعمل على الهاتف والحاسوب.</p>
+</div>
+<div class="lessons"><div class="lesson fadeup" style="min-width:0"><div class="lnum">🛡️</div><div><span class="lvl">مجاني · هاتف + حاسوب</span><h3>HaveIBeenPwned</h3><p>فحص مجاني لأي بريد إلكتروني أو رقم هاتف: هل تسرّب في اختراق بيانات؟ يعمل على الهاتف والحاسوب.</p><a href="https://haveibeenpwned.com" target="_blank" rel="noopener" style="color:var(--teal);font-weight:700;font-size:.9rem">فتح الأداة ↗</a></div></div><div class="lesson fadeup" style="min-width:0"><div class="lnum">🦊</div><div><span class="lvl">مجاني · هاتف + حاسوب</span><h3>Mozilla Monitor</h3><p>مراقبة بريدك والتسريبات المرتبطة به باستمرار، من مؤسسة موزيلا، مجاني.</p><a href="https://monitor.mozilla.org" target="_blank" rel="noopener" style="color:var(--teal);font-weight:700;font-size:.9rem">فتح الأداة ↗</a></div></div><div class="lesson fadeup" style="min-width:0"><div class="lnum">🦠</div><div><span class="lvl">مجاني · هاتف + حاسوب</span><h3>VirusTotal</h3><p>فحص أي رابط أو ملف أو نطاق للتأكد من سلامته قبل فتحه — أداة أساسية ضد التصيّد.</p><a href="https://www.virustotal.com" target="_blank" rel="noopener" style="color:var(--teal);font-weight:700;font-size:.9rem">فتح الأداة ↗</a></div></div><div class="lesson fadeup" style="min-width:0"><div class="lnum">🔍</div><div><span class="lvl">مجاني · هاتف + حاسوب</span><h3>urlscan.io</h3><p>تحليل أي رابط مشبوه ومشاهدة ما يفعله فعلياً قبل أن تفتحه.</p><a href="https://urlscan.io" target="_blank" rel="noopener" style="color:var(--teal);font-weight:700;font-size:.9rem">فتح الأداة ↗</a></div></div><div class="lesson fadeup" style="min-width:0"><div class="lnum">🖼️</div><div><span class="lvl">مجاني · هاتف</span><h3>Google Lens</h3><p>بحث عكسي عن الصور: تكتشف أين استُخدمت صورتك ومنتحلي الشخصية.</p><a href="https://lens.google.com" target="_blank" rel="noopener" style="color:var(--teal);font-weight:700;font-size:.9rem">فتح الأداة ↗</a></div></div><div class="lesson fadeup" style="min-width:0"><div class="lnum">👁️</div><div><span class="lvl">مجاني · هاتف + حاسوب</span><h3>TinEye</h3><p>بحث عكسي دقيق عن مصدر أي صورة ومعرفة إن كانت مقتطعة أو مزيفة.</p><a href="https://tineye.com" target="_blank" rel="noopener" style="color:var(--teal);font-weight:700;font-size:.9rem">فتح الأداة ↗</a></div></div><div class="lesson fadeup" style="min-width:0"><div class="lnum">📸</div><div><span class="lvl">مفتوح المصدر · حاسوب</span><h3>ExifTool (GitHub)</h3><p>استخراج البيانات المخفية في الصور (المكان، الجهاز، التاريخ) — لفحص صورك قبل نشرها.</p><a href="https://exiftool.org" target="_blank" rel="noopener" style="color:var(--teal);font-weight:700;font-size:.9rem">فتح الأداة ↗</a></div></div><div class="lesson fadeup" style="min-width:0"><div class="lnum">📧</div><div><span class="lvl">مفتوح المصدر · حاسوب</span><h3>holehe (GitHub)</h3><p>أداة مفتوحة المصدر تكشف على أي المواقع سُجّل بريدك الإلكتروني — لمعرفة أين بياناتك موجودة.</p><a href="https://github.com/megadose/holehe" target="_blank" rel="noopener" style="color:var(--teal);font-weight:700;font-size:.9rem">فتح الأداة ↗</a></div></div><div class="lesson fadeup" style="min-width:0"><div class="lnum">🔎</div><div><span class="lvl">مفتوح المصدر · حاسوب</span><h3>Maigret (GitHub)</h3><p>تفتيش اسم المستخدم عبر مئات المنصات — لمعرفة حساباتك القديمة وأين ظهر اسمك.</p><a href="https://github.com/soxoj/maigret" target="_blank" rel="noopener" style="color:var(--teal);font-weight:700;font-size:.9rem">فتح الأداة ↗</a></div></div><div class="lesson fadeup" style="min-width:0"><div class="lnum">📱</div><div><span class="lvl">مجاني · هاتف</span><h3>Truecaller</h3><p>التعرّف على الأرقام المجهولة وما إذا كانت تُبلَّغ عنها كمزعجة أو احتيالية.</p><a href="https://www.truecaller.com" target="_blank" rel="noopener" style="color:var(--teal);font-weight:700;font-size:.9rem">فتح الأداة ↗</a></div></div></div>
+<div style="background:var(--card);border:1px solid var(--line);border-radius:16px;padding:20px 22px;margin-top:22px">
+<p style="color:#c4ccd8;font-size:.9rem;line-height:1.95;margin:0"><b style="color:var(--gold)">قاعدة مهمة:</b> هذه الأدوات مخصّصة لفحص بياناتك أنت وبإذنك، وللتحقق من الروابط والأرقام المجهولة. البحث عن عنوان شخص آخر أو تحديد موقعه انطلاقاً من رقمه دون موافقته غير قانوني وغير مسموح في المغرب وفي معظم الدول، ولا توجد أداة شرعية تقوم به — من يدّعي ذلك فهو محتال.</p>
+</div>
+</section>
+
+<section id="messages" style="max-width:900px;margin:70px auto 0;padding:0 20px">
+<div class="regbox fadeup">
+<h2 style="text-align:center">لديك سؤال أو طلب؟ أرسل رسالتك 📩</h2>
+<p class="rsp" style="text-align:center">سؤال عن أداة، طلب مساعدة في البرمجة أو التصميم أو المونتاج؟ اكتب رسالتك وستصل إلينا مباشرة — ونرد عليك في أسرع وقت.</p>
+<div class="rform">
+<span class="lbl">الاسم *</span>
+<input id="msg-name" type="text" placeholder="مثال: يوسف">
+<span class="lbl">رسالتك *</span>
+<textarea id="msg-text" rows="4" style="background:var(--bg2);border:1px solid var(--line);border-radius:10px;color:var(--fg);padding:10px 14px;font-family:inherit;font-size:.95rem;width:100%;box-sizing:border-box" placeholder="اكتب سؤالك أو طلبك هنا..."></textarea>
+</div>
+<button class="btn btn-grad" style="margin-top:16px;width:100%;justify-content:center;font-size:1.02rem;padding:14px" onclick="msgSubmit()">أرسل الرسالة عبر واتساب 📩</button>
+</div>
+</section>
+
+<section id="start" style="padding-top:20px">
+  <div class="wrap">
+    <div class="cta fadeup">
+      <h2>واجد تبدا رحلتك؟ 🚀</h2>
+      <p>تواصل معانا مباشرة:</p>
+      <div style="display:flex;gap:16px;justify-content:center;flex-wrap:wrap;margin-top:6px">
+        <a href="https://wa.me/212663803875" class="btn btn-grad" style="font-size:1.05rem;padding:14px 30px">💬 واتساب الأكاديمية</a>
+        <a href="https://wa.me/212627101343" class="btn btn-ghost" style="font-size:1.05rem;padding:14px 30px">📞 المدير: +212 627 101 343</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    أكاديمية AI للبرمجة — تعلم من A إلى Z بنظام الأحزمة 🥋 مكتبة القوالب: <b>aitmpl.com</b><br>
+    <span style="font-size:.78rem">© 2026 — كل الدروس والموارد مجانية | 💬 +212 663 803 875</span>
+  </div>
+</footer>
+
+<script>
+  var obs = new IntersectionObserver(function(entries){
+    entries.forEach(function(e){ if(e.isIntersecting){ e.target.classList.add('show'); } });
+  }, {threshold: 0.12});
+  document.querySelectorAll('.fadeup').forEach(function(el){ obs.observe(el); });
+
+  
+function msgSubmit(){
+  var n = document.getElementById('msg-name').value.trim();
+  var t = document.getElementById('msg-text').value.trim();
+  if(!n || !t){ alert('يرجى إدخال الاسم ونص الرسالة 🙏'); return; }
+  var m = '📩 رسالة جديدة من موقع أكاديمية AI%0A%0A';
+  m += '👤 الاسم: ' + encodeURIComponent(n) + '%0A';
+  m += '📝 الرسالة: ' + encodeURIComponent(t);
+  window.open('https://wa.me/212663803875?text=' + m, '_blank');
+}
+
+function regSubmit(){
+    var name = document.getElementById('reg-name').value.trim();
+    var phone = document.getElementById('reg-phone').value.trim();
+    var goal = document.getElementById('reg-goal').value.trim();
+    if(!name || !goal){ alert('يرجى إدخال الاسم وما تريد تعلمه 🙏'); return; }
+    var msg = '🥋 تسجيل جديد فأكاديمية AI للبرمجة%0A%0A';
+    msg += '👤 السمية: ' + encodeURIComponent(name) + '%0A';
+    if(phone){ msg += '📱 الواتساب: ' + encodeURIComponent(phone) + '%0A'; }
+    msg += '🎯 بغيت نتعلم: ' + encodeURIComponent(goal) + '%0A%0A';
+    msg += encodeURIComponent('بغيت نبدا — عطيني المسار ديالي 🚀');
+    window.open('https://wa.me/212663803875?text=' + msg, '_blank');
+  }
+
+  function applyDaily(d){
+    if(!d || !d.title){ return; }
+      document.getElementById('daily-badge').textContent='أداة اليوم — '+d.date;
+      document.getElementById('daily-icon').textContent=d.icon;
+      document.getElementById('daily-title').textContent=d.title;
+      document.getElementById('daily-desc').textContent=d.desc;
+      var setBox=function(i,head,body){
+        var box=document.querySelectorAll('#daily-card div[style*="rgba(0,212,170,.06)"], #daily-card div[style*="rgba(139,92,246,.06)"], #daily-card div[style*="rgba(251,191,36,.06)"]');
+        if(box[i]){ box[i].innerHTML='<b>'+head+'</b><p style="color:var(--dim);font-size:.9rem;line-height:1.9;margin-top:6px">'+body+'</p>'; }
+      };
+      setBox(0,'<span style="color:var(--teal)">🔍 كيفاش كيقلبو عليها الناس؟</span>',d.search);
+      setBox(1,'<span style="color:#c4b5fd">🚀 كيفاش تبدا بيها؟ (3 خطوات)</span>',d.steps);
+      setBox(2,'<span style="color:var(--gold)">💡 المعلومة الصحيحة باش تستعملها مزيان</span>',d.tip);
+      var btns=document.querySelectorAll('#daily-card .btn-teal');
+      if(btns[0]){ btns[0].href=d.url; }
+      var arch=document.getElementById('daily-archive');
+      if(d.archive && d.archive.length){
+        document.getElementById('daily-archive-wrap').style.display='block';
+        var h='';
+        for(var i=d.archive.length-1;i>=0;i--){
+          h=h+'<div style="display:flex;justify-content:space-between;gap:10px;padding:8px 0;border-bottom:1px solid var(--line);font-size:.85rem"><span>'+d.archive[i].icon+' '+d.archive[i].title+'</span><span style="color:var(--dim);white-space:nowrap">'+d.archive[i].date+'</span></div>';
+        }
+        arch.innerHTML=h;
+      }
+  }
+
+  fetch('daily.json')
+    .then(function(r){ return r.json(); })
+    .then(applyDaily)
+    .catch(function(){
+      fetch('https://superagent-cc34a3f0.base44.app/functions/aitooldaily')
+        .then(function(r){ return r.json(); })
+        .then(applyDaily)
+        .catch(function(){ });
+    });
+
+async function loadLesson(){
+  try{
+    const r = await fetch('lessons.json'); const L = await r.json();
+    const body = document.getElementById('lesson-body');
+    body.innerHTML = '';
+    L.lessons.forEach((less, li)=>{
+      const newest = li===0;
+      const w = document.createElement('div');
+      w.style.marginBottom = '56px';
+      let html = '';
+      if (!newest) html += '<div style="display:flex;align-items:center;gap:14px;margin:10px 0 34px"><div style="flex:1;height:1px;background:linear-gradient(90deg,transparent,var(--line))"></div><span style="color:var(--dim);font-size:.8rem">درس مكمول ✔</span><div style="flex:1;height:1px;background:linear-gradient(90deg,var(--line),transparent)"></div></div>';
+      html += '<div style="text-align:center;margin-bottom:26px">'
+        + '<span style="display:inline-block;background:var(--acc);color:#04121c;font-size:.78rem;font-weight:bold;padding:5px 16px;border-radius:999px;letter-spacing:.3px">'+less.badge+' · '+less.date+'</span>'
+        + '<h3 style="font-size:'+(newest?'1.45rem':'1.2rem')+';margin:16px 0 10px;line-height:1.6">'+(newest?'📖 ':'')+less.title+'</h3>'
+        + '<p style="color:var(--dim);max-width:600px;margin:0 auto;font-size:.92rem;line-height:1.9">'+less.intro+'</p></div>';
+      less.sections.forEach((sec,si)=>{
+        html += '<div class="card" style="position:relative">'
+          + '<h4 style="color:var(--acc);font-size:1rem;margin:0 0 10px;line-height:1.7"><span style="display:inline-block;width:26px;height:26px;line-height:26px;text-align:center;background:var(--acc);color:#04121c;border-radius:8px;font-size:.85rem;margin-inline-end:8px;font-weight:bold">'+(si+1)+'</span>'+sec.heading+'</h4>'
+          + '<p style="color:#ffffff;white-space:pre-line;line-height:2.05;font-size:.97rem;margin:0">'+sec.body+'</p>';
+        if (sec.code) html += '<div style="background:#080b10;border:1px solid #1d2735;border-radius:12px;padding:14px 18px;margin-top:14px;font-family:ui-monospace,Consolas,monospace;font-size:.88rem;color:#00e5c0;direction:ltr;text-align:left;white-space:pre-wrap;line-height:1.8;overflow-x:auto">'+sec.code.join('\n')+'</div>';
+        html += '</div>';
+      });
+      w.innerHTML = html; body.appendChild(w);
+    });
+  }catch(e){
+    document.getElementById('lesson-title').textContent = '📖 دروس البرمجة والأمن السيبراني';
+    document.getElementById('lesson-intro').textContent = 'درس جديد في البرمجة والأمن السيبراني كل صباح.';
+  }
+}
+loadLesson();
+
+
+async function loadNSU(){
+  try{
+    const r = await fetch('data/nosignups_ar.json'); const D = await r.json();
+    document.getElementById('nsu-count').textContent = 'المعروض الآن: ' + D.tools.length + ' أداة من أصل ' + D.total + ' — والباقي يأتي كل صباح.';
+    const body = document.getElementById('nsu-body');
+    const groups = {};
+    D.tools.forEach(t=>{ (groups[t.cat] = groups[t.cat]||[]).push(t); });
+    let html='';
+    Object.keys(groups).forEach(cat=>{
+      html += '<h3 style="color:var(--gold);font-size:1.05rem;margin:28px 0 12px">'+cat+' ('+groups[cat].length+')</h3>';
+      html += '<div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:12px">';
+      groups[cat].forEach(t=>{
+        html += '<a href="'+t.url+'" target="_blank" rel="noopener" style="display:block;background:var(--card);border:1px solid var(--line);border-radius:14px;padding:16px 18px;text-decoration:none">'
+          + '<div style="display:flex;justify-content:space-between;align-items:center;gap:8px"><b style="color:#fff;font-size:.98rem">'+t.name+'</b>'
+          + (t.stars? '<span style="color:var(--dim);font-size:.72rem;white-space:nowrap">★ '+Math.round(t.stars/1000)+'k</span>':'')+'</div>'
+          + '<p style="color:#c4ccd8;font-size:.85rem;line-height:1.8;margin:8px 0 0">'+t.ar+'</p></a>';
+      });
+      html += '</div>';
+    });
+    body.innerHTML = html;
+  }catch(e){
+    document.getElementById('nsu-count').textContent = 'الأدوات تُحدَّث كل صباح.';
+  }
+}
+loadNSU();
+
+</script>
+
+<!-- زر واتساب عائم للتواصل المباشر -->
+<a href="https://wa.me/212663803875?text=%D8%A7%D9%84%D8%B3%D9%84%D8%A7%D9%85%20%D8%B9%D9%84%D9%8A%D9%83%D9%85%D8%8C%20%D8%AF%D8%AE%D9%84%D8%AA%20%D9%85%D9%86%20%D8%B1%D8%A7%D8%A8%D8%B7%20%D8%A7%D9%84%D8%A3%D9%83%D8%A7%D8%AF%D9%8A%D9%85%D9%8A%D8%A9%20%D9%88%D8%A8%D8%BA%D9%8A%D8%AA%20%D9%86%D8%B9%D8%B1%D9%81%20%D8%A7%D9%84%D8%AA%D9%81%D8%A7%D8%B5%D9%8A%D9%84" target="_blank" rel="noopener" aria-label="تواصل معنا على واتساب"
+ style="position:fixed;bottom:22px;left:22px;z-index:999;display:flex;align-items:center;gap:10px;background:linear-gradient(135deg,#25D366,#128C7E);color:#fff;font-family:'Cairo',system-ui,sans-serif;font-weight:900;font-size:.95rem;padding:14px 20px;border-radius:50px;box-shadow:0 10px 30px rgba(37,211,102,.45);text-decoration:none;direction:rtl">
+<span style="font-size:1.3rem;line-height:1">💬</span><span>راسلنا الآن</span></a>
+<style>@media(max-width:600px){@media(max-width:600px){}}</style>
+</body>
+</html>

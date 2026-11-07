@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://joker-academy.surge.sh/sitemap.xml

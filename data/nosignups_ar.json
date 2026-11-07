@@ -1,0 +1,526 @@
+{
+ "source": "nosignups.net",
+ "total": 65,
+ "tools": [
+  {
+   "name": "Visual Studio Code for the Web",
+   "ar": "محرر أكواد احترافي يعمل داخل المتصفح دون أي تثبيت — نفس تجربة VS Code الكاملة: تحرير، إضافات، وتنفيذ المشاريع.",
+   "cat": "تطوير وبرمجة",
+   "url": "https://vscode.dev/",
+   "github": "https://github.com/microsoft/vscode",
+   "stars": 194209
+  },
+  {
+   "name": "Godot Web",
+   "ar": "محرك ألعاب كامل يعمل في المتصفح دون تثبيت — لبناء ألعاب ثنائية وثلاثية الأبعاد وتصديرها.",
+   "cat": "تطوير وبرمجة",
+   "url": "https://editor.godotengine.org/releases/latest/",
+   "github": "https://github.com/godotengine/godot",
+   "stars": 118872
+  },
+  {
+   "name": "Hoppscotch",
+   "ar": "بيئة متكاملة لاختبار واجهات API (REST وGraphQL) — بديل مفتوح المصدر لـ Postman يعمل في المتصفح.",
+   "cat": "تطوير وبرمجة",
+   "url": "https://hoppscotch.io/",
+   "github": "https://github.com/hoppscotch/hoppscotch",
+   "stars": 80677
+  },
+  {
+   "name": "Algorithm Visualizer",
+   "ar": "عرض مرئي تفاعلي للخوارزميات وهياكل البيانات — أفضل طريقة لفهم البرمجة عملياً بدل الحفظ.",
+   "cat": "تطوير وبرمجة",
+   "url": "https://algorithm-visualizer.org/",
+   "github": "https://github.com/algorithm-visualizer/algorithm-visualizer",
+   "stars": 48889
+  },
+  {
+   "name": "JSON Crack",
+   "ar": "تحويل بيانات JSON إلى مخططات مرئية واضحة ومقروءة — أداة لا غنى عنها للمطورين.",
+   "cat": "تطوير وبرمجة",
+   "url": "https://jsoncrack.com/",
+   "github": "https://github.com/AykutSarac/jsoncrack.com",
+   "stars": 44516
+  },
+  {
+   "name": "IT Tools",
+   "ar": "مجموعة تضم عشرات الأدوات للمطورين في واجهة واحدة: تحويلات، تشفير، تنسيق نصوص، وخيارات أخرى كثيرة.",
+   "cat": "تطوير وبرمجة",
+   "url": "https://it-tools.tech/",
+   "github": "https://github.com/corentinth/it-tools",
+   "stars": 40934
+  },
+  {
+   "name": "drawDB",
+   "ar": "محرر مخططات قواعد بيانات بسيط مع توليد أوامر SQL تلقائياً من التصميم.",
+   "cat": "تطوير وبرمجة",
+   "url": "https://www.drawdb.app",
+   "github": "https://github.com/drawdb-io/drawdb",
+   "stars": 40106
+  },
+  {
+   "name": "Carbon",
+   "ar": "إنشاء صور أنيقة واحترافية من الشيفرة البرمجية للمشاركة على الشبكات الاجتماعية أو في المقالات.",
+   "cat": "تطوير وبرمجة",
+   "url": "https://carbon.now.sh/",
+   "github": "https://github.com/carbon-app/carbon",
+   "stars": 36121
+  },
+  {
+   "name": "FFmpeg.wasm",
+   "ar": "تشغيل محرك FFmpeg لمعالجة الفيديو والصوت مباشرة داخل المتصفح — بلا تثبيت برامج.",
+   "cat": "تطوير وبرمجة",
+   "url": "https://ffmpegwasm.netlify.app/playground",
+   "github": "https://github.com/ffmpegwasm/ffmpeg.wasm",
+   "stars": 17898
+  },
+  {
+   "name": "Markmap",
+   "ar": "تحويل ملفات Markdown إلى خرائط ذهنية تفاعلية قابلة للمشاركة.",
+   "cat": "تطوير وبرمجة",
+   "url": "https://markmap.js.org/",
+   "github": "https://github.com/markmap/markmap",
+   "stars": 13187
+  },
+  {
+   "name": "RegExr",
+   "ar": "بناء واختبار التعبيرات النمطية (RegEx) مع شرح مباشر لكل جزء منها.",
+   "cat": "تطوير وبرمجة",
+   "url": "https://regexr.com/",
+   "github": "https://github.com/gskinner/regexr/",
+   "stars": 10382
+  },
+  {
+   "name": "Bundlephobia",
+   "ar": "قياس حجم وتأثير أي مكتبة JavaScript قبل إضافتها إلى مشروعك.",
+   "cat": "تطوير وبرمجة",
+   "url": "https://bundlephobia.com/",
+   "github": "https://github.com/pastelsky/bundlephobia",
+   "stars": 9608
+  },
+  {
+   "name": "Transform",
+   "ar": "تحويل الشيفرة بين الصيغ واللغات تلقائياً: JSON، TypeScript، GraphQL، SQL وغيرها.",
+   "cat": "تطوير وبرمجة",
+   "url": "https://transform.tools/",
+   "github": "https://github.com/ritz078/transform",
+   "stars": 9247
+  },
+  {
+   "name": "Mermaid Live",
+   "ar": "كتابة المخططات الانسيابية كنص وعرضها ومشاركتها فوراً.",
+   "cat": "تطوير وبرمجة",
+   "url": "https://mermaid.live",
+   "github": "https://github.com/mermaid-js/mermaid-live-editor",
+   "stars": 6869
+  },
+  {
+   "name": "AST Explorer",
+   "ar": "استكشاف شجرة التحليل النحوي للأكواد — أداة للمطورين المتقدمين ومهندسي اللغات.",
+   "cat": "تطوير وبرمجة",
+   "url": "https://astexplorer.net/",
+   "github": "https://github.com/fkling/astexplorer",
+   "stars": 6545
+  },
+  {
+   "name": "Kroki",
+   "ar": "توليد مخططات ورسوم تقنية احترافية من نص بسيط، بلا برامج تصميم.",
+   "cat": "تطوير وبرمجة",
+   "url": "https://kroki.io/#try",
+   "github": "https://github.com/yuzutech/kroki",
+   "stars": 4379
+  },
+  {
+   "name": "M3E Canvas",
+   "ar": "تصميم واجهات تطبيقات بأسلوب Material 3 داخل المتصفح بسرعة وسهولة.",
+   "cat": "تطوير وبرمجة",
+   "url": "https://lnkiai.github.io/m3e-canvas/",
+   "github": "https://github.com/lnkiai/m3e-canvas",
+   "stars": 9588
+  },
+  {
+   "name": "Stirling PDF",
+   "ar": "مجموعة أدوات PDF متكاملة تعمل في المتصفح: دمج، تقسيم، ضغط، تحويل وتوقيع — كل ذلك بخصوصية تامة.",
+   "cat": "ذكاء اصطناعي",
+   "url": "https://stirling.com/app",
+   "github": "https://github.com/Stirling-Tools/Stirling-PDF",
+   "stars": 94732
+  },
+  {
+   "name": "WebLLM",
+   "ar": "تشغيل نماذج لغوية كبيرة داخل متصفحك مباشرة بلا خادم — ذكاء اصطناعي يعمل على جهازك.",
+   "cat": "ذكاء اصطناعي",
+   "url": "https://webllm.mlc.ai/",
+   "github": "https://github.com/mlc-ai/web-llm",
+   "stars": 19301
+  },
+  {
+   "name": "World Monitor",
+   "ar": "لوحة معلومات عالمية حية تجمع الأخبار بالذكاء الاصطناعي في واجهة واحدة.",
+   "cat": "ذكاء اصطناعي",
+   "url": "https://www.worldmonitor.app/",
+   "github": "https://github.com/koala73/worldmonitor?utm_source=worldmonitor&utm_medium=referral&utm_campaign=general",
+   "stars": 89192
+  },
+  {
+   "name": "OSIRIS",
+   "ar": "بديل مفتوح المصدر لمنصات التحليل الاستخباراتي — تحليل بيانات متقدم في المتصفح.",
+   "cat": "ذكاء اصطناعي",
+   "url": "https://www.osirisai.live/",
+   "github": "https://github.com/simplifaisoul/osiris",
+   "stars": 11226
+  },
+  {
+   "name": "waifu2x",
+   "ar": "تحسين دقة الصور وإزالة الضوضاء عنها باستخدام الذكاء الاصطناعي.",
+   "cat": "ذكاء اصطناعي",
+   "url": "https://www.waifu2x.net/",
+   "github": "https://github.com/nagadomi/nunif",
+   "stars": 3518
+  },
+  {
+   "name": "PairDrop",
+   "ar": "نقل الملفات بين الهاتف والحاسوب فوراً — بلا تثبيت ولا تسجيل.",
+   "cat": "ذكاء اصطناعي",
+   "url": "https://pairdrop.net/",
+   "github": "https://github.com/schlagmichdoch/pairdrop",
+   "stars": 11648
+  },
+  {
+   "name": "RAWGraphs",
+   "ar": "إنشاء رسوم بيانية احترافية من بياناتك (Excel/CSV) بلا كتابة كود.",
+   "cat": "بيانات",
+   "url": "https://app.rawgraphs.io",
+   "github": "https://github.com/rawgraphs/rawgraphs-app",
+   "stars": 9044
+  },
+  {
+   "name": "Mr. Data Converter",
+   "ar": "تحويل بيانات Excel أو CSV إلى صيغ برمجية: JSON، SQL، XML وغيرها.",
+   "cat": "بيانات",
+   "url": "https://shancarter.github.io/mr-data-converter/",
+   "github": "https://github.com/shancarter/Mr-Data-Converter?tab=License-1-ov-file",
+   "stars": 1956
+  },
+  {
+   "name": "Datasette Lite",
+   "ar": "تشغيل استعلامات SQL على ملفات CSV وJSON داخل المتصفح مباشرة.",
+   "cat": "بيانات",
+   "url": "https://lite.datasette.io",
+   "github": "https://github.com/simonw/datasette-lite",
+   "stars": 410
+  },
+  {
+   "name": "SQLChef",
+   "ar": "استعلام ملفات CSV وJSON وParquet بـ SQL داخل المتصفح بلا تثبيت.",
+   "cat": "بيانات",
+   "url": "https://jonathanwalker.github.io/SQLChef/",
+   "github": "https://github.com/jonathanwalker/sqlchef",
+   "stars": 15
+  },
+  {
+   "name": "Roadmaps.sh",
+   "ar": "خرائط طريق تفاعلية لكل مسار تقني: تطوير الويب، بايثون، الأمن السيبراني والذكاء الاصطناعي.",
+   "cat": "تعليم",
+   "url": "https://roadmap.sh/",
+   "github": "https://github.com/nilbuild/developer-roadmap",
+   "stars": 370126
+  },
+  {
+   "name": "Full Stack Open",
+   "ar": "دورة مجانية شاملة من جامعة هلسنكي: React وNode.js وقواعد البيانات — عملي بالكامل.",
+   "cat": "تعليم",
+   "url": "https://fullstackopen.com/en/",
+   "github": "https://github.com/fullstack-hy2020/fullstack-hy2020.github.io",
+   "stars": 2238
+  },
+  {
+   "name": "The Missing Manual",
+   "ar": "أدلة مفصلة ومبسطة لكل ما يخص التقنية والبرمجة، مكتوبة بعناية.",
+   "cat": "تعليم",
+   "url": "https://themissingmanual.dev",
+   "github": "https://github.com/Topurrra/themissingmanual",
+   "stars": 22
+  },
+  {
+   "name": "JS Bin",
+   "ar": "محرر JavaScript تعاوني: اكتب الكود وشغّله فوراً في المتصفح — مثالي لتجربة JavaScript وHTML وCSS.",
+   "cat": "تطوير وبرمجة",
+   "url": "https://jsbin.com",
+   "github": "https://github.com/jsbin/jsbin",
+   "stars": 4423
+  },
+  {
+   "name": "Python Tutor",
+   "ar": "عرض تنفيذ الشيفرة خطوة بخطوة بصرياً — أقوى طريقة لفهم ما يحدث داخل البرنامج أثناء تشغيله، للبايثون وغيرها.",
+   "cat": "تطوير وبرمجة",
+   "url": "https://pythontutor.com",
+   "github": "https://github.com/pathrise-eng/pathrise-python-tutor",
+   "stars": 202
+  },
+  {
+   "name": "CyberChef",
+   "ar": "ساحة عمل سيبرانية متكاملة: ترميز، فك ترميز، تشفير وتحليل بيانات — كلها داخل المتصفح وبلا تسجيل.",
+   "cat": "تطوير وبرمجة",
+   "url": "https://gchq.github.io/CyberChef/",
+   "github": "https://github.com/gchq/CyberChef",
+   "stars": 36181
+  },
+  {
+   "name": "draw.io",
+   "ar": "رسم المخططات الانسيابية وهندسة الأنظمة والمخططات التقنية الاحترافية — مجاني بالكامل.",
+   "cat": "تطوير وبرمجة",
+   "url": "https://www.drawio.com/",
+   "github": "https://github.com/jgraph/drawio",
+   "stars": 8931
+  },
+  {
+   "name": "Excalidraw",
+   "ar": "سبورة بيضاء للرسم التخطيطي بأسلوب اليد — مثالية لشرح الأفكار ورسم المخططات بسرعة.",
+   "cat": "تصميم",
+   "url": "https://excalidraw.com",
+   "github": "https://github.com/excalidraw/excalidraw",
+   "stars": 134385
+  },
+  {
+   "name": "privacy.sexy",
+   "ar": "مولّد سكربتات لتعزيز الخصوصية والأمان على ويندوز وماك ولينكس: يرشدك خطوة بخطوة إلى الإعدادات الموصى بها.",
+   "cat": "خصوصية وأمان",
+   "url": "https://privacy.sexy",
+   "github": "https://github.com/undergroundwires/privacy.sexy",
+   "stars": 6134
+  },
+  {
+   "name": "CryptPad",
+   "ar": "جنحة مكتبية تعاونية بتشفير شامل من الطرف إلى الطرف: مستندات وجداول وعروض مشتركة تعمل من المتصفح دون تسجيل.",
+   "cat": "إنتاجية",
+   "url": "https://cryptpad.fr",
+   "github": "https://github.com/cryptpad/cryptpad",
+   "stars": 8024
+  },
+  {
+   "name": "Graphite",
+   "ar": "محرر رسوميات ثنائي الأبعاد مفتوح المصدر بجودة احترافية: تصميم وأعمال رقمية تعمل مباشرة من المتصفح.",
+   "cat": "تصميم",
+   "url": "https://editor.graphite.rs",
+   "github": "https://github.com/GraphiteEditor/Graphite",
+   "stars": 27686
+  },
+  {
+   "name": "OpenCut",
+   "ar": "بديل مفتوح المصدر مجاني لبرنامج CapCut: محرر فيديو بخط زمني كامل يعمل من المتصفح على الهاتف أو الحاسوب.",
+   "cat": "وسائط",
+   "url": "https://opencut.app",
+   "github": "https://github.com/OpenCut-app/OpenCut",
+   "stars": 95722
+  },
+  {
+   "name": "Grist",
+   "ar": "جداول ذكية تجمع بين مرونة الجدول المعتاد وقوة قاعدة البيانات: تصفية وربط وتلخيص البيانات من المتصفح.",
+   "cat": "بيانات",
+   "url": "https://docs.getgrist.com",
+   "github": "https://github.com/gristlabs/grist-core",
+   "stars": 11986
+  },
+  {
+   "name": "SVG-Edit",
+   "ar": "محرر رسومات متجهية (SVG) كامل داخل المتصفح: ترسم الأشكال والمسارات وتصدّر ملفاً قابلاً للتعديل والتكبير بلا فقدان جودة، دون تثبيت أي برنامج.",
+   "cat": "تصميم",
+   "url": "https://svgedit.netlify.app/index.html",
+   "github": "https://github.com/SVG-Edit/svgedit",
+   "stars": 7882
+  },
+  {
+   "name": "Method Draw",
+   "ar": "محرر رسم متجهي خفيف وسريع للمخططات والأيقونات والرسوم التوضيحية، يشتغل فوراً في المتصفح ويصدّر SVG جاهزاً للاستعمال في المواقع.",
+   "cat": "تصميم",
+   "url": "https://editor.method.ac",
+   "github": "https://github.com/methodofaction/Method-Draw",
+   "stars": 3021
+  },
+  {
+   "name": "Piskel",
+   "ar": "أداة لصناعة رسوم البكسل والألعاب القديمة (Pixel Art) مع الرسوم المتحركة إطاراً بإطار: ترسم شخصيتك وتصدّرها GIF أو PNG وتستعملها في لعبتك مباشرة.",
+   "cat": "تصميم",
+   "url": "https://www.piskelapp.com",
+   "github": "https://github.com/piskelapp/piskel",
+   "stars": 12860
+  },
+  {
+   "name": "Cryptii",
+   "ar": "محوّل تشفير وترميز شامل: يحوّل بين أنظمة الترميز (Base64 وHex) ويطبّق الشيفرات الكلاسيكية كقيصر وفينيير مع تحويل النتائج خطوة بخطوة، للتعلّم والتجربة.",
+   "cat": "خصوصية وأمان",
+   "url": "https://cryptii.com",
+   "github": "https://github.com/cryptii/cryptii",
+   "stars": 1509
+  },
+  {
+   "name": "EtherCalc",
+   "ar": "جدول بيانات تعاوني في المتصفح: تعمل عليه وحدك أو تدعو آخرين للتعديل في نفس اللحظة، وتصدّر النتائج إلى Excel أو CSV دون إنشاء حساب.",
+   "cat": "إنتاجية",
+   "url": "https://ethercalc.net/",
+   "github": "https://github.com/audreyt/ethercalc",
+   "stars": 3057
+  },
+  {
+   "name": "Browserpad",
+   "ar": "محرر نصوص بسيط داخل المتصفح، مناسب للملاحظات السريعة. يحفظ العمل محلياً في المتصفح دون الحاجة إلى إنشاء حساب.",
+   "cat": "الكتابة والملاحظات",
+   "url": "https://browserpad.org",
+   "github": "https://github.com/browserpad/browserpad",
+   "stars": 88
+  },
+  {
+   "name": "Markdown Live Preview",
+   "ar": "محرر Markdown يعرض التنسيق فور الكتابة، مفيد لإعداد المستندات وملفات README ومراجعة العناوين والقوائم.",
+   "cat": "الكتابة والتوثيق",
+   "url": "https://markdownlivepreview.com",
+   "github": "https://github.com/tanabe/markdown-live-preview",
+   "stars": 1024
+  },
+  {
+   "name": "Dillinger",
+   "ar": "محرر Markdown عبر الويب مع معاينة مباشرة وخيارات تصدير، لإنشاء مستندات منسقة ومشاركتها بسهولة.",
+   "cat": "الكتابة والتوثيق",
+   "url": "https://dillinger.io",
+   "github": "https://github.com/joemccann/dillinger",
+   "stars": 8292
+  },
+  {
+   "name": "StackEdit",
+   "ar": "محرر Markdown متكامل يعمل عبر المتصفح، مع معاينة فورية وخيارات للعمل دون اتصال ومزامنة اختيارية.",
+   "cat": "الكتابة والتوثيق",
+   "url": "https://stackedit.io",
+   "github": "https://github.com/benweet/stackedit",
+   "stars": 23094
+  },
+  {
+   "name": "Resume Nation",
+   "ar": "منشئ سيرة ذاتية تقدمي يعمل حتى دون اتصال بعد تحميله، ويساعد على إعداد سيرة ذاتية مرتبة من المتصفح.",
+   "cat": "الإنتاجية والسيرة الذاتية",
+   "url": "https://resume-nation.github.io",
+   "github": "https://github.com/resume-nation/resume-nation.github.io",
+   "stars": 153
+  },
+  {
+   "name": "DartPad",
+   "ar": "محرر Dart كامل داخل المتصفح مع دعم تطبيقات Flutter — اكتب الشيفرة وشاهد النتيجة فوراً دون تثبيت أي بيئة تطوير.",
+   "cat": "تطوير وبرمجة",
+   "url": "https://dartpad.dev",
+   "github": "https://github.com/dart-lang/dart-pad",
+   "stars": 1869
+  },
+  {
+   "name": "Pandoc WASM",
+   "ar": "نسخة من Pandoc تعمل داخل المتصفح لتحويل المستندات بين الصيغ الشائعة (Markdown وHTML وWord) دون رفع ملفاتك إلى أي خادم، فتتم المعالجة على جهازك.",
+   "cat": "أدوات متنوعة",
+   "url": "https://pandoc.github.io/pandoc-wasm/",
+   "github": "https://github.com/pandoc/pandoc-wasm",
+   "stars": 28
+  },
+  {
+   "name": "Notepad PWA",
+   "ar": "مفكرة خفيفة تعمل دون اتصال بعد أول زيارة، وتحفظ ملاحظاتك في المتصفح، مناسبة للكتابة السريعة على الهاتف.",
+   "cat": "الكتابة والتوثيق",
+   "url": "https://notepad.js.org",
+   "github": "https://github.com/amitmerchant1990/notepad",
+   "stars": 383
+  },
+  {
+   "name": "JSPaint",
+   "ar": "نسخة محدثة من برنامج الرسام الكلاسيكي بأدوات إضافية، للرسم والتعديل السريع على الصور داخل المتصفح.",
+   "cat": "تصميم",
+   "url": "https://jspaint.app",
+   "github": "https://github.com/1j01/jspaint",
+   "stars": 7900
+  },
+  {
+   "name": "PixelCraft",
+   "ar": "أداة لرسم الرسوم النقطية (Pixel Art) وتحريكها، مع تصدير الأصول الجاهزة لألعاب ثنائية الأبعاد.",
+   "cat": "تصميم",
+   "url": "https://pixelcraft.web.app",
+   "github": "https://github.com/rgab1508/PixelCraft",
+   "stars": 1528
+  },
+  {
+   "name": "Squoosh",
+   "ar": "ضاغط صور يعمل بالكامل داخل المتصفح: تقليل حجم الصور بصيغ حديثة مع معاينة مباشرة للجودة، دون رفع الملفات إلى أي خادم.",
+   "cat": "وسائط وصور",
+   "url": "https://squoosh.app/",
+   "github": "https://github.com/GoogleChromeLabs/squoosh/",
+   "stars": 26055
+  },
+  {
+   "name": "Cobalt",
+   "ar": "أداة تنزيل محتوى الوسائط من منصات متعددة بجودة عالية ودون إعلانات أو تتبّع، بواجهة بسيطة تعمل على الهاتف والحاسوب.",
+   "cat": "وسائط وصور",
+   "url": "https://cobalt.tools/",
+   "github": "https://github.com/imputnet/cobalt",
+   "stars": 45348
+  },
+  {
+   "name": "BentoPDF",
+   "ar": "مجموعة أدوات معالجة ملفات PDF في المتصفح: دمج وتقسيم وضغط وتحويل الصفحات، دون تثبيت برامج ودون تسجيل.",
+   "cat": "إنتاجية وملفات",
+   "url": "https://www.bentopdf.com/",
+   "github": "https://github.com/alam00000/bentopdf/",
+   "stars": 16123
+  },
+  {
+   "name": "Koodo Reader",
+   "ar": "قارئ كتب إلكترونية متعدد المنصات يدير مكتبتك الخاصة EPUB وPDF وMOBI، مع مزامنة اختيارية وتخصيص كامل لبيئة القراءة.",
+   "cat": "قراءة وكتب",
+   "url": "https://web.koodoreader.com/",
+   "github": "https://github.com/koodo-reader/koodo-reader",
+   "stars": 28605
+  },
+  {
+   "name": "MiroTalk P2P",
+   "ar": "منصة اجتماعات فيديو مباشرة من المتصفح تعتمد الاتصال النظير للنظير: مشاركة الشاشة والدردشة دون حساب ودون خادم وسيط.",
+   "cat": "اجتماعات واتصال",
+   "url": "https://p2p.mirotalk.com/",
+   "github": "https://github.com/miroslavpejic85/mirotalk",
+   "stars": 4799
+  },
+  {
+   "name": "explainshell.com",
+   "ar": "أداة تشرح أي أمر لينكس كلمة بكلمة: تلصق الأمر فيظهر تلوين لكل جزء مع النص المساعد الرسمي المقابل له، فتتعلم معنى كل خيار بدل حفظه. عملية جداً لمن يتعلم الطرفية من الهاتف.",
+   "cat": "تطوير وبرمجة",
+   "url": "https://explainshell.com/",
+   "github": "https://github.com/idank/explainshell",
+   "stars": 14301
+  },
+  {
+   "name": "Sqlime",
+   "ar": "مساحة عمل SQLite كاملة في المتصفح: تنشئ جداول وتكتب استعلامات SQL وتنفّذها فوراً على قاعدة بيانات محلية داخل صفحتك، دون تثبيت ولا حساب. مناسبة لتعلّم SQL ولاختبار استعلام قبل استخدامه في مشروع.",
+   "cat": "تطوير وبرمجة",
+   "url": "https://sqlime.org/",
+   "github": "https://github.com/nalgeon/sqlime",
+   "stars": 1067
+  },
+  {
+   "name": "SVGOMG",
+   "ar": "محسّن ملفات SVG: يقلّل حجم الصورة الشعاعية بنسبة كبيرة مع الحفاظ على الشكل، عبر إزالة البيانات الوصفية الزائدة وتبسيط المسارات. يخدم سرعة تحميل الموقع ويُستخدم قبل رفع الشعارات والأيقونات.",
+   "cat": "تصميم",
+   "url": "https://jakearchibald.github.io/svgomg/",
+   "github": "https://github.com/jakearchibald/svgomg",
+   "stars": 6207
+  },
+  {
+   "name": "Cryptgeon",
+   "ar": "خدمة مشاركة سرّية: ترسل نصاً أو ملفاً مشفّراً برابط ينتهي بعد قراءة واحدة أو بعد مدة تحددها أنت. الخادم لا يحتفظ بالمفتاح، ولذلك تُعد بديلاً عملياً عن إرسال كلمات السر والملفات الحساسة في محادثة عادية.",
+   "cat": "خصوصية وأمان",
+   "url": "https://cryptgeon.com/",
+   "github": "https://github.com/cupcakearmy/cryptgeon",
+   "stars": 1562
+  },
+  {
+   "name": "lookscanned",
+   "ar": "تحوّل مستندات PDF إلى نسخ تبدو ممسوحة ضوئياً بآثار ورق وميل بسيط، مع خيارات لإضافة ختم أو علامة مائية، وكل المعالجة تحدث داخل المتصفح فلا يُرفع ملفك إلى أي خادم.",
+   "cat": "الكتابة والتوثيق",
+   "url": "https://lookscanned.io",
+   "github": "https://github.com/lookscanned/lookscanned.io",
+   "stars": 3600
+  }
+ ]
+}
